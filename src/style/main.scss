@@ -1,0 +1,100 @@
+$color_background: #1F2A3C;
+$button_color:#0DE8D4;
+$color_white:#fff;
+$color_purple:#9c63f7;
+$color_gray:#3f4958;
+
+%btn_primary{
+    background-color: $button_color;
+    color: #0f0f0f;
+    border-radius: 10px;
+}
+
+%btn_secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color_background;
+    border: 1.5px solid $button_color;
+    border-radius: 10px;
+    color: $color_white;
+        a{
+        
+            text-decoration: none;
+            color: $color_white;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+        
+        
+        };
+}
+
+%btn_slider{
+    width: 183px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50px 50px 50px;
+    background: linear-gradient(90deg, #45B3E0 0%, #8F6EF4 40.09%);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: $color_white;
+}
+
+%fs-normal{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+// ......Button 'Know more'
+
+
+// .know_more{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//         img{
+//             width: 25px;
+//             height: 25px;
+
+//         }
+// }
+
+// .btn_know_more{
+//     padding: 15px 10px 15px 15px;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 20px;
+//     line-height: 1.5;
+//     color: $button_color;
+
+// }
+
+body{
+    font-family: 'Kanit', sans-serif;
+    background: $color_background;
+}
+
+.bg_anim{
+    position: relative;
+
+}
+
+.bg_img{
+    position: absolute;
+    width: 2068px;
+    height: 830px;
+    top: 411px;
+    left: -559px;
+
+}
+
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 30px;
+}

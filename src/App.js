@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 import AboutUs from './components/AboutUs';
 import Contacts from './components/Contacts';
 import FAQ from './components/FAQ';
@@ -7,6 +6,7 @@ import Service from './components/Service';
 import MainPage from './components/MainPage';
 import Header from './components/Header';
 import {Routes, Route} from 'react-router-dom';
+
 
 function App() {
   return (
