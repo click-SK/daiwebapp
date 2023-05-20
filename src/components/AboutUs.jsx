@@ -24,26 +24,26 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className="about_popup_wrapper">
-                <div className="popup_card">
-                    <div className="popup_card_one"></div>
-                    <div className="popup_card_dublicate">
-                        <div className="popup_card_dublicate_sub">
+                <div className="popup_cards">
+                    <div className="popup_cards_one"></div>
+                    <div className="popup_cards_dublicate">
+                        <div className="popup_cards_dublicate_sub">
                         За<span> ефективністю </span> D.A.I.Wo нічим <br /> не поступається банкам, біржам <br />та інвестиційним фондам.
                         </div>
                     </div>
                 </div>
-                <div className="popup_card">
-                    <div className="popup_card_one"></div>
-                    <div className="popup_card_dublicate">
-                        <div className="popup_card_dublicate_sub">
+                <div className="popup_cards">
+                    <div className="popup_cards_one"></div>
+                    <div className="popup_cards_dublicate">
+                        <div className="popup_cards_dublicate_sub">
                         D.A.I.Wo створений для того, щоб<br /> <span>вирішити</span> фінансову проблему<br /> кожного жителя планети
                         </div>
                     </div>
                 </div>
-                <div className="popup_card">
-                    <div className="popup_card_one"></div>
-                    <div className="popup_card_dublicate">
-                        <div className="popup_card_dublicate_sub">
+                <div className="popup_cards">
+                    <div className="popup_cards_one"></div>
+                    <div className="popup_cards_dublicate">
+                        <div className="popup_cards_dublicate_sub">
                         D.A.I.Wo – це платформа, де<br /> <span>штучний інтелект</span> самостійно<br /> інвестує та розподіляє кошти.
                         </div>
                     </div>
