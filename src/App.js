@@ -1,5 +1,5 @@
 
-import AboutUs from './components/AboutUs';
+import AboutUsPage from './components/AboutUsPage';
 import Contacts from './components/Contacts';
 import FAQ from './components/FAQ';
 import Service from './components/Service';
@@ -14,7 +14,7 @@ function App() {
       <Header/>
       <Routes>
       <Route path='/' element={<MainPage/>}/>
-      <Route path='/about-us' element={<AboutUs/>}/>
+      <Route path='/about-us' element={<AboutUsPage/>}/>
       <Route path='/service' element={<Service/>}/>
       <Route path='/faq' element={<FAQ/>}/>
       <Route path='/contacts' element={<Contacts/>}/>

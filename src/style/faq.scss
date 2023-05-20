@@ -1,0 +1,70 @@
+@import'./main.scss';
+
+
+
+
+.faq_btn{
+    margin-top: 167px;
+    @extend %btn_slider;
+}
+
+.faq_answer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 50px;
+
+}
+
+.faq_answer_text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    color: $color_white;
+}
+
+.faq_question{
+    max-width: 1200px;
+    height: 69px;
+    background: $color_gray;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 52px;
+    margin-top: 20px;
+}
+
+.faq_question_text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $color_white;
+}
+
+.faq_question_arrow{
+    width: 30px;
+    height: 25px;
+}
+
+.know_more{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        img{
+            width: 25px;
+            height: 25px;
+
+        }
+}
+
+.btn_know_more{
+    padding: 15px 10px 15px 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $button_color;
+
+}
