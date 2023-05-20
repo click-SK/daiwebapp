@@ -68,12 +68,12 @@
     display: flex;
     column-gap: 20px;
 }
-.popup_card{
+.popup_cards{
     position: relative;
 
 
 }
-.popup_card_one{
+.popup_cards_one{
     width: 387px;
     height: 170px;
     border: 1px solid #fff;
@@ -81,7 +81,7 @@
 
 }
 
-.popup_card_dublicate{
+.popup_cards_dublicate{
     position: absolute;
     width: 387px;
     height: 170px;
@@ -92,7 +92,7 @@
     transform: translate(-8.5px ,-3.7px);
 }
 
-.popup_card_dublicate_sub{
+.popup_cards_dublicate_sub{
     position: relative;
     top: 37px;
     left: 17px;

@@ -4,6 +4,22 @@ $color_white:#fff;
 $color_purple:#9c63f7;
 $color_gray:#3f4958;
 
+%title_style{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+    color: $color_white;
+}
+
+%subtitle_style{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+    color: $color_white;
+}
+
 %btn_primary{
     background-color: $button_color;
     color: #0f0f0f;
@@ -49,6 +65,8 @@ $color_gray:#3f4958;
     font-size: 16px;
     line-height: 1.5;
 }
+
+
 
 // ......Button 'Know more'
 

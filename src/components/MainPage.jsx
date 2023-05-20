@@ -5,6 +5,9 @@ import rateItem from './../img/rate_item.svg'
 import airItem from './../img/air_item.svg'
 import AboutUs from './AboutUs';
 import Service from './Service';
+import FAQ from './FAQ';
+import Contacts from './Contacts';
+import Footer from './Footer';
 
 
 const MainPage = () => {
@@ -51,7 +54,10 @@ const MainPage = () => {
                 </div>
                 <AboutUs/>
                 <Service/>
+                <FAQ/>
+                <Contacts/>
             </div>
+            <Footer/>
         </div>
     );
 };
