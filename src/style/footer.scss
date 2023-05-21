@@ -3,13 +3,15 @@
 
 .footer{
     background: #1e1e1e;
+
 }
-.footer_conteiner{
+.footer_container{
     max-width: 1260px;
-    min-height: 300px;
+    min-height: 260px;
     margin: 0 auto;
     padding: 0 30px;
 }
+
 
 .footer_nav{
     padding-top: 92px;
@@ -29,4 +31,11 @@
             height: 30px;
             margin-right: 5px;
         }
+}
+
+.footer_border{
+    height: 40px;
+    border-top: 1px solid #6d6d6d;
+    background: #1e1e1e;
+
 }

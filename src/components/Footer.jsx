@@ -9,7 +9,7 @@ import emailFooter from './../img/icons/icon_email-footer.svg'
 const Footer = () => {
     return ( 
         <footer className='footer'>
-            <div className="footer_conteiner">
+            <div className="footer_container">
                 <div className="footer_nav">
                     <Logo/>
                     <div className='links'>
@@ -28,8 +28,8 @@ const Footer = () => {
                     <p>УКР</p>
                     </div>
                 </div>
-                <div className="footer_border"></div>
             </div>
+            <div className="footer_border"></div>
         </footer>
      );
 }
