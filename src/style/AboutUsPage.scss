@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 327px;
     span{
         color: $color_purple;
     }
@@ -31,7 +32,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 327px;
     @extend %btn_primary;
         a{
             text-decoration: none;
@@ -162,38 +162,57 @@
     background-size: 608px 523px ;
 }
 
-.about_about_daiwo_wrapcard{
+.daiwo_card{
     position: relative;
+    margin-bottom: 107px;
+
 }
 
-.about_daiwo_card_one{
+.daiwo_card_one{
     width: 544px;
     height: 269px;
     border: 1px solid #fff;
     border-radius: 15px;
 }
 
-// .about_daiwo_card_dublicate{
-//     position: absolute;
-//     width: 544px;
-//     height: 269px;
-//     top: 0;
-//     left: 0;
-//     // display: flex;
-//     // justify-content: center;
-//     // align-items: center;
-//     background-color: $color_gray;
-//     border-radius: 15px;
-//     transform: translate(-8.5px ,-3.7px);
-// }
+.daiwo_card_two{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 544px;
+    height: 269px;
+    top: 0;
+    left: 0;
+    background-color: $color_gray;
+    border-radius: 15px;
+    transform: translate(-12px ,-10px);
+}
 
-.card_dublicate_sub{
+.card_text{
     color: $color_white;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.045em;
+    
         span{
             color: $color_purple;
+        }
+}
+
+.btn_start_card{
+    width: 183px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    @extend %btn_primary;
+        a{
+            text-decoration: none;
+            color: $color_gray;
+            @extend %fs-normal;
         }
 }

@@ -34,16 +34,16 @@ const MainPage = () => {
                         </div>
                     </div>
                     <div className="main_card">
-                        <div className="card_one">
-                        <div className="card_duplicat">
+                        <div className="card_rate">
+                        <div className="duplicat_rate">
                             <div className="card_title">Rate:</div>
                             <div className="card_item_one">
                                 <img src={rateItem} alt="Item" />
                             </div>
                         </div>
                         </div>
-                        <div className="card_one">
-                        <div className="card_duplicat">
+                        <div className="card_air">
+                        <div className="air_duplicat">
                             <div className="card_title">Air:</div>
                             <div className="card_item_two">
                                 <img src={airItem} alt="Item" />

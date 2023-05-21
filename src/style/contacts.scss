@@ -85,10 +85,11 @@
     width: 273px;
     height: 45px;
     border-radius: 5px  ;
+    text-indent: 26px;
         
 }
 ::placeholder{
-    padding-left: 26px;
+
     @extend %fs-normal;
     color: #8f8f8f;
 }

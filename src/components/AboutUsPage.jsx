@@ -1,17 +1,17 @@
 import React from 'react';
-import './../style/AboutUsPage.scss'
-import aboutUsimg from './../img/aboutus_image.svg'
+import './../style/aboutUsPage.scss'
+import aboutUsimg from './../img/aboutus_image.png'
 import Footer from './Footer';
 
 
 const AboutUsPage = () => {
     return ( 
-        <div className='aboutUsPage'>
+        <div className='about_us_page'>
             <div className="container">
                 <div className="main_info">
                     <div className="title">Хто сказав, що <br /> <span>інвестування</span>  це складно?</div>
                     <div className="description"><span>D.A.I.Wo </span> – це платформа, де користувачу не потрібні глибокі<br /> знання у фінансуванні, макроекономіці та інвестиціях. Ви<br /> купуєте токени, а штучний інтелект самостійно інвестує та<br /> розподіляє кошти.</div>
-                    <div className="btn_start"><a href="#">Почати</a></div>
+                    <button className="btn_start"><a href="#">Почати</a></button>
                 </div>
                 <div className="extra__info_container">
                     <div className="extra_info_text">
@@ -53,14 +53,10 @@ const AboutUsPage = () => {
                     </div>
                 </div>
                 <div className="daiwo_card">
-                    <div className="about_daiwo_wrap">
-                        <div className="about_daiwo_card_one"></div>
-                        <div className="about_daiwo_card_dublicate">
-                            {/* <div className="card_dublicate_sub">
-                            Нейромережа бере на себе важкий процес<span> управління фінансами</span> та інвестиціями, відкриваючи всім людям планети вільниий доступ у світ інвестицій
-                            </div>
-                            <div className="btn_start">Почати</div> */}
-                        </div>
+                    <div className="daiwo_card_one"></div>
+                    <div className="daiwo_card_two">
+                        <p className='card_text'>Нейромережа бере на себе важкий процес <br /> <span>yправління фінансами</span> та інвестиціями,<br /> відкриваючи всім людям планети вільниий<br /> доступ у світ інвестицій</p>
+                        <button className="btn_start_card"><a href="#">Почати</a></button>
                     </div>
                 </div>
             </div>

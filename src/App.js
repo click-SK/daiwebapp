@@ -1,11 +1,12 @@
 
 import AboutUsPage from './components/AboutUsPage';
-import Contacts from './components/Contacts';
-import FAQ from './components/FAQ';
-import Service from './components/Service';
+import ContactsPage from './components/ContactsPage';
+import FAQPage from './components/FAQPage';
+import ServicePage from './components/ServicePage';
 import MainPage from './components/MainPage';
 import Header from './components/Header';
 import {Routes, Route} from 'react-router-dom';
+
 
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
       <Routes>
       <Route path='/' element={<MainPage/>}/>
       <Route path='/about-us' element={<AboutUsPage/>}/>
-      <Route path='/service' element={<Service/>}/>
-      <Route path='/faq' element={<FAQ/>}/>
-      <Route path='/contacts' element={<Contacts/>}/>
+      <Route path='/service' element={<ServicePage/>}/>
+      <Route path='/faq' element={<FAQPage/>}/>
+      <Route path='/contacts' element={<ContactsPage/>}/>
       </Routes>
     </div>
   );
