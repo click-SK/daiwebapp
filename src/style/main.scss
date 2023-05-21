@@ -66,53 +66,28 @@ $color_gray:#3f4958;
     line-height: 1.5;
 }
 
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 146%;
+    letter-spacing: 0.045em;
+    color: #fff;
+}
 
-
-// ......Button 'Know more'
-
-
-// .know_more{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//         img{
-//             width: 25px;
-//             height: 25px;
-
-//         }
-// }
-
-// .btn_know_more{
-//     padding: 15px 10px 15px 15px;
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 20px;
-//     line-height: 1.5;
-//     color: $button_color;
-
-// }
 
 body{
+    height: 100%;
     font-family: 'Kanit', sans-serif;
     background: $color_background;
-}
-
-.bg_anim{
-    position: relative;
-
-}
-
-.bg_img{
-    position: absolute;
-    width: 2068px;
-    height: 830px;
-    top: 411px;
-    left: -559px;
-
 }
 
 .container{
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 30px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }

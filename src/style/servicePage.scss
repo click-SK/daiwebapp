@@ -1,0 +1,189 @@
+@import'./main.scss';
+
+
+
+.service_title_block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 239px;
+    span{
+        color: $color_purple;
+    }
+}
+
+.title_h1{
+    @extend %title_style;
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+
+.subtitle_h3{
+    @extend %subtitle_style;
+}
+.service_title_img{
+    position: relative;
+
+}
+.page_coin_one{
+    position: absolute;
+    width: 486px;
+    height: 307px;
+    top: 80px;
+    right: 170px;
+    
+    
+
+}
+.page_coin_two{
+    position: absolute;
+    width: 519px;
+    height: 315px;
+    top: 40px;
+    right: -85px;
+    z-index: -1;
+}
+
+.how_work{
+    margin-top: 350px;
+    height: 800px;
+    span{
+        color: $color_purple;
+    }
+}
+
+.how_work_wrap{
+    margin-top: 70px;
+    display: flex;
+
+}
+
+.how_work_animation{
+    width: 50%;
+    height: 600px;
+    position: relative;
+
+        .service_anim{
+            position: absolute;
+            width: 565px;
+            height: 565px;
+            top: 0;
+            left: -22%;
+        }
+}
+
+.how_work_info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    position: relative;
+
+        .item_bar{
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            width: 60px;
+            height: 458px;
+        }
+}
+
+.info_blok{
+    margin-bottom: 60px;
+}
+
+
+.info_blok_title{
+    color: $color_purple;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 146%;
+    letter-spacing: 0.045em;
+    margin-bottom: 15px;
+}
+
+.info_blok_subtitle{
+    color: $color_white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.045em;
+}
+
+.service_why_info{
+    margin-top: 80px;
+    h2{
+        margin-bottom: 50px;
+    }
+    span{
+        color: $color_purple;
+    }
+    
+}
+
+.service_card_columns{
+    // height: 800px;
+    margin: 64px 0 115px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.service_column{
+    height: 1020px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.column_item{
+    margin: 50px;
+    position: relative;
+    
+
+}
+
+.column_item_border{
+    width: 446px;
+    height: 213px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.column_item_card{
+    position: absolute;
+    width: 446px;
+    height: 213px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 29px 28px 0 30px;
+    background-color: $color_gray;
+    border-radius: 15px;
+    transform: translate(-12px ,-10px);
+}
+
+.card_header{
+
+    color: $color_purple;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 146%;
+    letter-spacing: 0.04em;
+}
+
+.card_info{
+    margin-top: 20px;
+    color: $color_white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.045em;
+}
+
+.elipse_icon{
+    position: absolute;
+    top: -30px;
+    left: 346px;
+}

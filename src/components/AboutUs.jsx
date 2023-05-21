@@ -1,7 +1,7 @@
 import React from 'react';
 import './../style/aboutUs.scss'
 import logo from './../img/logo_main.svg'
-import imageAbout from './../img/image_about.svg'
+import aboutUsimg from './../img/aboutus_image.png'
 import arrowForward from './../img/icons/icon_arrow-forward.svg'
 
 
@@ -19,7 +19,7 @@ const AboutUs = () => {
                     </div>
                     <div className="about_info_pictures">
                         <img className='logo' src={logo} alt="logo" />
-                        <img className='img_about' src={imageAbout} alt="image" />
+                        <img className='img_about' src={aboutUsimg} alt="image" />
                     </div>
                 </div>
             </div>
