@@ -2,7 +2,15 @@
 
 //................Service background
 
+.background{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+    opacity: 50%;
 
+}
 .service_animation_big{
     width: 2060px;
     position: absolute;

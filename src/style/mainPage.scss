@@ -135,3 +135,13 @@
         height: 195px;
     }
 }
+
+.background{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+    opacity: 50%;
+
+}

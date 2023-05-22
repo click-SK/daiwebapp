@@ -5,6 +5,7 @@ import rateItem from './../img/rate_item.svg'
 import airItem from './../img/air_item.svg'
 import AboutUs from './AboutUs';
 import Service from './Service';
+import AnimWave from './wave/AnimWave';
 import FAQ from './FAQ';
 import Contacts from './Contacts';
 import Footer from './Footer';
@@ -14,9 +15,13 @@ const MainPage = () => {
     return (
         <div className='MainPage'>
             <div className="container">
+                <div className='background'>
+                    <AnimWave/>
+                </div>
                 <div className="main_wrap">
                     <div className="main_text">
                         <div className="main_title">
+
                         <span>Почни створювати</span>свою<br/>фінансову незалежність <br/> 
                         <span>вже сьогодні</span>
                         </div>
@@ -42,6 +47,7 @@ const MainPage = () => {
                             </div>
                         </div>
                         </div>
+                        
                         <div className="card_air">
                         <div className="air_duplicat">
                             <div className="card_title">Air:</div>

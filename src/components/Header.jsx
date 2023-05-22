@@ -17,6 +17,7 @@ const Header = () => {
                         <Link to='/service'>Послуга</Link>
                         <Link to='/faq'>FAQ</Link>
                         <Link to='/contacts'>Контакти</Link>
+                        <Link to='/profile'>/profile</Link>
                     </div>
                     <WalletAndLang/>
                 </div>
