@@ -20,7 +20,6 @@ const Header = () => {
                     </div>
                     <WalletAndLang/>
                 </div>
-
             </div>
         </header>
     );

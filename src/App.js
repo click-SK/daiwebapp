@@ -6,6 +6,7 @@ import ServicePage from './components/ServicePage';
 import MainPage from './components/MainPage';
 import Header from './components/Header';
 import {Routes, Route} from 'react-router-dom';
+import Profile from './components/Profile';
 
 
 
@@ -19,7 +20,9 @@ function App() {
       <Route path='/service' element={<ServicePage/>}/>
       <Route path='/faq' element={<FAQPage/>}/>
       <Route path='/contacts' element={<ContactsPage/>}/>
+      <Route path='/profile' element={<Profile/>}/>
       </Routes>
+      
     </div>
   );
 }

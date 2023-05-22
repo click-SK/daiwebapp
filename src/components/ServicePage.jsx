@@ -5,6 +5,7 @@ import coinTwo from './../img/coin2.svg'
 import Footer from "./Footer";
 import service_anim from './../img/section1_animation.svg'
 import itemBar from './../img/item_bar_service.svg'
+import bigAnim from './../img/Background_animation.svg'
 
 
 const ServicePage = () => {
@@ -44,6 +45,15 @@ const ServicePage = () => {
 
     return (
       <div className="service_page">
+        <div className="main_background">
+          <div className="service_animation_big">
+            <img src={bigAnim} alt="" />
+          </div>
+          <div className="service_spotlight_one"></div>
+          <div className="service_spotlight_two"></div>
+          <div className="service_spotlight_three"></div>
+          <div className="service_spotlight_four"></div>
+        </div>
         <div className="container">
           <div className="service_title_block">
             <div className="service_title">
