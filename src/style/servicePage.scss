@@ -1,6 +1,61 @@
 @import'./main.scss';
 
+//................Service background
 
+
+.service_animation_big{
+    width: 2060px;
+    position: absolute;
+    top: -500px;
+    left: 500px;
+    transform: scale(1.5);
+    z-index: -99;
+}
+
+.service_spotlight_one{
+    position: absolute;
+    top: 400px;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+.service_spotlight_two{
+    position: absolute;
+    top: 400px;
+    right: 10%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+.service_spotlight_three{
+    position: absolute;
+    top: 400px;
+    right: 40%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+.service_spotlight_four{
+    position: absolute;
+    top: 400px;
+    right: 80%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+
+
+//................Service info
 
 .service_title_block{
     display: flex;

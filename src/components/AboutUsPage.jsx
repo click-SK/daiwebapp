@@ -1,6 +1,9 @@
 import React from 'react';
 import './../style/aboutUsPage.scss'
 import aboutUsimg from './../img/aboutus_image.png'
+import smallAnim from './../img/small_anim.svg'
+import bigAnim from './../img/Background_animation.svg'
+import imgdown from './../img/About_img.png'
 import Footer from './Footer';
 
 
@@ -8,6 +11,17 @@ const AboutUsPage = () => {
     return ( 
         <div className='about_us_page'>
             <div className="container">
+                <div className="about_background">
+                    <div className="about_small_animation">
+                        <img src={smallAnim} alt="anim" />
+                    </div>
+                    <div className="about_big_animation">
+                        <img src={bigAnim} alt="anim" />
+                    </div>
+                    <div className="about_img_down">
+                        <img src={imgdown} alt="img" />
+                    </div>
+                </div>
                 <div className="main_info">
                     <div className="title">Хто сказав, що <br /> <span>інвестування</span>  це складно?</div>
                     <div className="description"><span>D.A.I.Wo </span> – це платформа, де користувачу не потрібні глибокі<br /> знання у фінансуванні, макроекономіці та інвестиціях. Ви<br /> купуєте токени, а штучний інтелект самостійно інвестує та<br /> розподіляє кошти.</div>
