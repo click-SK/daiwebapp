@@ -5,19 +5,23 @@ import smallAnim from './../img/small_anim.svg'
 import bigAnim from './../img/Background_animation.svg'
 import imgdown from './../img/About_img.png'
 import Footer from './Footer';
+import AnimWave from './wave/AnimWave';
 
 
 const AboutUsPage = () => {
     return ( 
         <div className='about_us_page'>
             <div className="container">
+                 <div className='background'>
+                    <AnimWave/>
+                </div>
                 <div className="about_background">
                     <div className="about_small_animation">
                         <img src={smallAnim} alt="anim" />
                     </div>
-                    <div className="about_big_animation">
+                    {/* <div className="about_big_animation">
                         <img src={bigAnim} alt="anim" />
-                    </div>
+                    </div> */}
                     <div className="about_img_down">
                         <img src={imgdown} alt="img" />
                     </div>
