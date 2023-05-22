@@ -1,6 +1,34 @@
 @import'./main.scss';
 
 
+//...............About background
+
+.about_background{
+    position: relative;
+}
+
+.about_small_animation{
+    position: absolute;
+    top: 1250px;
+    left: 315px;
+    z-index: -99;
+}
+
+.about_big_animation{
+    position: absolute;
+    top: -400px;
+    transform: scale(1.5);
+    z-index: -99;
+}
+
+.about_img_down{
+    position: absolute;
+    top: 2130px;
+    right: -20px;
+    z-index: -99;
+}
+
+//...........................
 .main_info{
     display: flex;
     flex-direction: column;
@@ -79,9 +107,9 @@
 // ............About us section
 
 .about_section{
-    background: url(./../img/logo_second.svg) no-repeat;
-    background-position: 50% 50%;
-    background-size: 223px 267px;
+    // background: url(./../img/logo_second.svg) no-repeat;
+    // background-position: 50% 50%;
+    // background-size: 223px 267px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
