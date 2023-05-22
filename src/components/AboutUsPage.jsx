@@ -1,5 +1,5 @@
 import React from 'react';
-import './../style/aboutUsPage.scss'
+import '../style/aboutUsPage.scss'
 import aboutUsimg from './../img/aboutus_image.png'
 import smallAnim from './../img/small_anim.svg'
 import bigAnim from './../img/Background_animation.svg'
