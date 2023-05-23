@@ -1,12 +1,13 @@
 
-import AboutUsPage from './components/AboutUsPage';
-import ContactsPage from './components/ContactsPage';
-import FAQPage from './components/FAQPage';
-import ServicePage from './components/ServicePage';
-import MainPage from './components/MainPage';
-import Header from './components/Header';
+import AboutUsPage from './components/about_us_page/AboutUsPage';
+import ContactsPage from './components/contacts_page/ContactsPage';
+import FAQPage from './components/faq_page/FAQPage';
+import ServicePage from './components/service_page/ServicePage';
+import MainPage from './components/main_page/MainPage';
+import Header from './components/header/Header';
 import {Routes, Route} from 'react-router-dom';
-import Profile from './components/Profile';
+import Profile from './components/profile_page/Profile';
+import Footer from './components/Footer';
 
 
 
@@ -22,7 +23,7 @@ function App() {
       <Route path='/contacts' element={<ContactsPage/>}/>
       <Route path='/profile' element={<Profile/>}/>
       </Routes>
-      
+      <Footer/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 @import'./main.scss';
-
+@import'./tamplates.scss';
+@import'./colors.scss';
 
 //...............About background
 
@@ -24,12 +25,6 @@
     z-index: -99;
 }
 
-.about_big_animation{
-    position: absolute;
-    top: -400px;
-    transform: scale(1.5);
-    z-index: -99;
-}
 
 .about_img_down{
     position: absolute;
@@ -195,7 +190,7 @@
 }
 
 .about_daiwo_card{
-    background: url(./../img/aboutus_image2.svg) no-repeat;
+    background: url(../../public/img/aboutus_image2.svg) no-repeat;
     background-position: 100% 50% ;
     background-size: 608px 523px ;
 }

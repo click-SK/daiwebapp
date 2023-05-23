@@ -1,5 +1,6 @@
 @import'./main.scss';
-
+@import'./tamplates.scss';
+@import'./colors.scss';
 .contacts_btn{
     margin-top: 123px;
     @extend %btn_slider;
@@ -38,7 +39,7 @@
     padding: 0 40px;
 }
 
-.purple{
+.purple_email{
     font-weight: 600;
     font-size: 40px;
     line-height: 1.5;

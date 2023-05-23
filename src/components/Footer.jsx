@@ -1,9 +1,9 @@
 import './../style/footer.scss'
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from './Logo';
-import globIcon from './../img/icons/icons_language.svg'
-import emailFooter from './../img/icons/icon_email-footer.svg'
+import Logo from './header/Logo';
+// import globIcon from './img/icons/icons_language.svg'
+// import emailFooter from '../../public/icons/icon_email-footer.svg'
 
 
 const Footer = () => {
@@ -20,11 +20,11 @@ const Footer = () => {
                         <Link to='/contacts'>Контакти</Link>
                     </div>
                     <div className="footer_email">
-                        <img src={emailFooter} alt="email" />
+                        <img src='./icons/icon_email-footer.svg' alt="email" />
                         <p>info@daiwo.ai</p>  
                     </div>
                     <div className="glob_lang">
-                    <img src={globIcon} alt="glob" />
+                    <img src='./icons/icons_language.svg' alt="glob" />
                     <p>УКР</p>
                     </div>
                 </div>

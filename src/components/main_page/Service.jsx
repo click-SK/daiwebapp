@@ -1,8 +1,6 @@
 import React from 'react';
-import './../style/service.scss'
-import coinOne from './../img/coin1.svg'
-import coinTwo from './../img/coin2.svg'
-import arrowForward from './../img/icons/icon_arrow-forward.svg'
+import '../../style/service.scss'
+
 
 
 const Service = () => {
@@ -18,8 +16,8 @@ const Service = () => {
                        </div>
                     </div>
                     <div className="service_info_pictures">
-                        <img className='coin_one' src={coinOne} alt="Coin img" />
-                        <img className='coin_two' src={coinTwo} alt="Coin img" />
+                        <img className='coin_one' src='/img/coin1.svg' alt="Coin img" />
+                        <img className='coin_two' src='/img/coin1.svg' alt="Coin img" />
                     </div>
                 </div>
             </div>
@@ -30,7 +28,7 @@ const Service = () => {
             </div>
             <div className="know_more">
                 <a className='btn_know_more' href="#">Дізнатись більше</a>
-                <img src={arrowForward} alt="" />
+                <img src='/icons/icon_arrow-forward.svg' alt="" />
             </div>
         </div>
     );
