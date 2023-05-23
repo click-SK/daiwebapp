@@ -1,6 +1,16 @@
 import React from 'react';
+import '../style/aboutUsPage.scss'
 import './../../style/AboutUsPage.scss'
 import AnimWave from '../wave/AnimWave';
+
+// import '../style/aboutUsPage.scss'
+// import aboutUsimg from './../img/aboutus_image.png'
+// import smallAnim from './../img/small_anim.svg'
+// import bigAnim from './../img/Background_animation.svg'
+// import imgdown from './../img/About_img.png'
+// import Footer from './Footer';
+// import AnimWave from './wave/AnimWave';
+
 
 
 const AboutUsPage = () => {
