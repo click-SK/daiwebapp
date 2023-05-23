@@ -1,12 +1,8 @@
 import React,{useState} from 'react';
-import './../style/servicePage.scss'
-import coinOne from './../img/coin1.svg'
-import coinTwo from './../img/coin2.svg'
-import Footer from "./Footer";
-import AnimWave from './wave/AnimWave';
-import service_anim from './../img/section1_animation.svg'
-import itemBar from './../img/item_bar_service.svg'
-import bigAnim from './../img/Background_animation.svg'
+import '../../style/servicePage.scss'
+import AnimWave from '../wave/AnimWave';
+
+
 
 
 const ServicePage = () => {
@@ -50,9 +46,6 @@ const ServicePage = () => {
                     <AnimWave/>
         </div>
         <div className="main_background">
-          {/* <div className="service_animation_big">
-            <img src={bigAnim} alt="" />
-          </div> */}
           <div className="service_spotlight_one"></div>
           <div className="service_spotlight_two"></div>
           <div className="service_spotlight_three"></div>
@@ -72,8 +65,8 @@ const ServicePage = () => {
             </div>
 
             <div className="service_title_img">
-              <img className="page_coin_one" src={coinOne} alt="Coin img" />
-              <img className="page_coin_two" src={coinTwo} alt="Coin img" />
+              <img className="page_coin_one" src='/img/coin1.svg' alt="Coin img" />
+              <img className="page_coin_two" src='/img/coin2.svg' alt="Coin img" />
             </div>
           </div>
           <div className="how_work">
@@ -86,12 +79,12 @@ const ServicePage = () => {
               <div className="how_work_animation">
                 <img
                   className="service_anim"
-                  src={service_anim}
+                  src='/img/section1_animation.svg'
                   alt="animation"
                 />
               </div>
               <div className="how_work_info">
-                <img className="item_bar" src={itemBar} alt="" />
+                <img className="item_bar" src='/img/item_bar_service.svg' alt="" />
                 <div className="info_blok">
                   <p className="info_blok_title">Проведення емісії</p>
                   <p className="info_blok_subtitle">
@@ -151,7 +144,6 @@ const ServicePage = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
 }

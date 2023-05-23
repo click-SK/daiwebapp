@@ -1,82 +1,5 @@
-$color_background: #1F2A3C;
-$button_color:#0DE8D4;
-$color_white:#fff;
-$color_purple:#9c63f7;
-$color_gray:#3f4958;
-$color_bg_profile: rgba(63, 73, 88, 0.7);
-
-%title_style{
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.5;
-    letter-spacing: 0.045em;
-    color: $color_white;
-}
-
-%subtitle_style{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.5;
-    letter-spacing: 0.045em;
-    color: $color_white;
-}
-
-%btn_primary{
-    background-color: $button_color;
-    color: #0f0f0f;
-    border-radius: 10px;
-}
-
-%btn_secondary{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $color_background;
-    border: 1.5px solid $button_color;
-    border-radius: 10px;
-    color: $color_white;
-        a{
-        
-            text-decoration: none;
-            color: $color_white;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.5;
-        
-        
-        };
-}
-
-%btn_slider{
-    width: 183px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 50px 50px 50px;
-    background: linear-gradient(90deg, #45B3E0 0%, #8F6EF4 40.09%);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.5;
-    color: $color_white;
-}
-
-%fs-normal{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-
-
-h2{
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 146%;
-    letter-spacing: 0.045em;
-    color: #fff;
-}
-
+@import'./colors.scss';
+@import'./tamplates.scss';
 
 body{
     height: 100%;
@@ -91,7 +14,15 @@ body{
     padding: 0 30px;
 }
 
-// ::-webkit-scrollbar{
-//     width: 0;
-//     height: 0;
-// }
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 146%;
+    letter-spacing: 0.045em;
+    color: $color_white;
+}
+
+
+
+
+
