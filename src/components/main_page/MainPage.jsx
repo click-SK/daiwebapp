@@ -1,14 +1,10 @@
 import React from 'react';
-import './../style/mainPage.scss'
-import icoEmail from './../img/icons/icon_email.svg'
-import rateItem from './../img/rate_item.svg'
-import airItem from './../img/air_item.svg'
-import AboutUs from './AboutUs';
-import Service from './Service';
-import AnimWave from './wave/AnimWave';
-import FAQ from './FAQ';
-import Contacts from './Contacts';
-import Footer from './Footer';
+import '../../style/mainPage.scss'
+import AboutUs from '../main_page/AboutUs';
+import Service from '../main_page/Service';
+import AnimWave from '../wave/AnimWave';
+import FAQ from '../main_page/FAQ';
+import Contacts from '../main_page/Contacts';
 
 
 const MainPage = () => {
@@ -34,7 +30,7 @@ const MainPage = () => {
                             <button className='main_btn_two'>Дізнатись більше</button>
                         </div>
                         <div className="email">
-                        <img src={icoEmail} alt="email" />
+                        <img src='/icons/icon_email.svg' alt="email" />
                         <p>info@daiwo.ai</p>  
                         </div>
                     </div>
@@ -43,7 +39,7 @@ const MainPage = () => {
                         <div className="duplicat_rate">
                             <div className="card_title">Rate:</div>
                             <div className="card_item_one">
-                                <img src={rateItem} alt="Item" />
+                                <img src='/img/rate_item.svg' alt="Item" />
                             </div>
                         </div>
                         </div>
@@ -52,7 +48,7 @@ const MainPage = () => {
                         <div className="air_duplicat">
                             <div className="card_title">Air:</div>
                             <div className="card_item_two">
-                                <img src={airItem} alt="Item" />
+                                <img src='/img/air_item.svg' alt="Item" />
                             </div>
                         </div>
                         </div>
@@ -63,7 +59,6 @@ const MainPage = () => {
                 <FAQ/>
                 <Contacts/>
             </div>
-            <Footer/>
         </div>
     );
 };

@@ -1,11 +1,6 @@
 import React from 'react';
-import './../style/aboutUsPage.scss'
-import aboutUsimg from './../img/aboutus_image.png'
-import smallAnim from './../img/small_anim.svg'
-import bigAnim from './../img/Background_animation.svg'
-import imgdown from './../img/About_img.png'
-import Footer from './Footer';
-import AnimWave from './wave/AnimWave';
+import './../../style/AboutUsPage.scss'
+import AnimWave from '../wave/AnimWave';
 
 
 const AboutUsPage = () => {
@@ -17,13 +12,10 @@ const AboutUsPage = () => {
                 </div>
                 <div className="about_background">
                     <div className="about_small_animation">
-                        <img src={smallAnim} alt="anim" />
+                        <img src='/img/small_anim.svg' alt="anim" />
                     </div>
-                    {/* <div className="about_big_animation">
-                        <img src={bigAnim} alt="anim" />
-                    </div> */}
                     <div className="about_img_down">
-                        <img src={imgdown} alt="img" />
+                        <img src='/img/About_img.png' alt="img" />
                     </div>
                 </div>
                 <div className="main_info">
@@ -42,7 +34,7 @@ const AboutUsPage = () => {
                         </div>
                     </div>
                     <div className="extra__info_picture">
-                        <img src={aboutUsimg} alt="about us" />
+                        <img src='/img/aboutus_image.png' alt="about us" />
                     </div>
                 </div>
                 <div className="about_section">
@@ -78,7 +70,6 @@ const AboutUsPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
      );
 }

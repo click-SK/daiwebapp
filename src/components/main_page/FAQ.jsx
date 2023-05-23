@@ -1,8 +1,7 @@
 import React,{useState} from 'react';
-import './../style/faq.scss'
-import logoSecond from './../img/logo_second.svg'
-import arrowPurple from './../img/icons/icon_arrow-purple.svg'
-import arrowForward from './../img/icons/icon_arrow-forward.svg'
+import '../../style/faq.scss'
+
+
 
 
 
@@ -26,7 +25,7 @@ const FAQ = () => {
                 <div className="faq_answer">
                     <div className="faq_answer_text">Відповіді на найбільш поширені <br /> запитання – все, що вам потрібно знати</div>
                     <div className="faq_answer_logo">
-                        <img src={logoSecond} alt="logo" />
+                        <img src='/img/logo_second.svg' alt="logo" />
                     </div>
                 </div>
 
@@ -34,7 +33,7 @@ const FAQ = () => {
                      <div className="faq_question" key={index} >
                         <div className="faq_question_text">{item}</div>
                         <div className="faq_question_arrow">
-                             <img src={arrowPurple} alt="icon" />
+                             <img src='/icons/icon_arrow-purple.svg' alt="icon" />
                         </div>
                     </div>
                 ))}
@@ -42,7 +41,7 @@ const FAQ = () => {
                
                 <div className="know_more">
                 <a className='btn_know_more' href="#">Дізнатись більше</a>
-                <img src={arrowForward} alt="" />
+                <img src='/icons/icon_arrow-forward.svg' alt="" />
                 </div>
             </div>
         </div>

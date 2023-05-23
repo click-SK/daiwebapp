@@ -1,5 +1,6 @@
 @import'./main.scss';
-
+@import'./tamplates.scss';
+@import'./colors.scss';
 //................Profile background
 .main_background{
     position: relative;
@@ -334,8 +335,10 @@
     border-radius: 5px;
 }
 
+//.......................Transaction history
+
 .transaction_history{
-    height: 377px;
+    min-height: 377px;
     background: $color_bg_profile;
     border-radius: 15px;
     margin: 20px 0 42px 0;
@@ -376,6 +379,7 @@
     justify-content: flex-end;
 
 }
+.red{color: red;}
 
 
 .show_more{

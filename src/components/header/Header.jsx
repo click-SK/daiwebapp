@@ -1,5 +1,5 @@
-import './../style/header.scss'
 import React from 'react';
+import '../../style/header.scss'
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import WalletAndLang from './WalletAndLang';
@@ -17,7 +17,7 @@ const Header = () => {
                         <Link to='/service'>Послуга</Link>
                         <Link to='/faq'>FAQ</Link>
                         <Link to='/contacts'>Контакти</Link>
-                        <Link to='/profile'>/profile</Link>
+                        <Link to='/profile'>Профіль</Link>
                     </div>
                     <WalletAndLang/>
                 </div>

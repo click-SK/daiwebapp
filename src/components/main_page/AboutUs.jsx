@@ -1,9 +1,5 @@
 import React from 'react';
-import './../style/aboutUs.scss'
-import logo from './../img/logo_main.svg'
-import aboutUsimg from './../img/aboutus_image.png'
-import arrowForward from './../img/icons/icon_arrow-forward.svg'
-
+import '../../style/aboutUs.scss'
 
 
 
@@ -18,8 +14,8 @@ const AboutUs = () => {
                         <div className="about_info_subtitle">Він працює 24/7/365, ніколи не втомлюється і <br /> допомагає заробляти гроші на інвестуванні. <br /> Платформа для токенізації бізнесів, бізнес-процесів, <br /> будь-яких фінансових послуг, активів і пасивів.</div>
                     </div>
                     <div className="about_info_pictures">
-                        <img className='logo' src={logo} alt="logo" />
-                        <img className='img_about' src={aboutUsimg} alt="image" />
+                        <img className='logo' src='/img/logo_main.svg' alt="logo" />
+                        <img className='img_about' src='/img/aboutus_image.png' alt="image" />
                     </div>
                 </div>
             </div>
@@ -51,7 +47,7 @@ const AboutUs = () => {
             </div>
             <div className="know_more">
                 <a className='btn_know_more' href="#">Дізнатись більше</a>
-                <img src={arrowForward} alt="" />
+                <img src='/icons/icon_arrow-forward.svg'alt="" />
             </div>
             
         </div>
