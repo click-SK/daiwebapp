@@ -6,7 +6,7 @@
 
 
 .header_row{
-    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 36px;
+    column-gap: 25px;
 
   
 }
@@ -32,3 +32,8 @@
 }
 
 
+@media(max-width: 1200px){
+    .links{
+        display: none;
+    }
+}

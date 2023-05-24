@@ -34,6 +34,7 @@
 }
 
 .service_info_title{
+    width: 550px;
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -45,6 +46,7 @@
 }
 
 .service_info_subtitle{
+    width: 610px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
@@ -81,15 +83,16 @@
 }
 
 .service_info_extra{
+    height: 108px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .info_block{
     border-right: 1px solid #fff;
-    padding-right: 57px;
     font-weight: 600;
+    padding-right: 57px;
     font-size: 24px;
     line-height: 1.5;
     color: $color_white;
@@ -98,8 +101,15 @@
         }
 }
 
+
+.info_block:nth-child(2){
+    margin-left: 57px;
+}
+
+
 .info_block:nth-child(3){
     border-right: none;
+    margin-left: 57px;
     padding-right: 0;
 }
 

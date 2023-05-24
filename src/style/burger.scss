@@ -1,0 +1,83 @@
+@import'./main.scss';
+@import'./tamplates.scss';
+@import'./colors.scss';
+
+.burger_menu_btn{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.burger_menu{
+    background: $color_background;
+    padding: 30px 20px;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.burger_menu_wrapper{
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.burger_menu_header{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger_logo{
+    width: 115px;
+    height: 30px;
+}
+.burger_close{
+    width: 20px;
+    height: 20px;
+}
+
+.burger_menu_link{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 25px;
+        a{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.5;
+            color: $color_white;
+            text-decoration: none;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 25px;
+        }
+}
+
+.burger_menu_link a:last-child{
+    border-bottom:none;
+    padding-bottom: 0;
+
+}
+
+.burger_menu_lang,.burger_menu_mail{
+    display: flex;
+    margin-top: 50px;
+}
+
+.burger_menu_wallet{
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+// @media(min-width: 120px){
+//     .burger_menu_btn{
+//         display: none;
+//     }
+// }

@@ -7,6 +7,23 @@ import AnimWave from '../wave/AnimWave';
 
 const ServicePage = () => {
 
+    const [arr2,setArr2] = useState([
+
+      {
+        title:'Проведення емісії',
+        description:'Нейромережа емітуватиме свої активкойни, тобто інвестиційні смарт-контракти.'
+      },
+      {
+        title:'Інвестування',
+        description:'Вони будуть забезпечені програмним кодом мережі, який міститиме дані про активи, в які мережа інвестуватиме.'
+      },
+      {
+        title:'Винагорода',
+        description:'Монетизація інвесторів відбуватиметься шляхом отримання процентного арбітража.'
+      },
+
+    ])
+
     const [arr,setArr] = useState([
         {
             title:'Децентралізованість',
@@ -42,8 +59,8 @@ const ServicePage = () => {
 
     return (
       <div className="service_page">
-        <div className='background'>
-                    <AnimWave/>
+        <div className="background">
+          <AnimWave />
         </div>
         <div className="main_background">
           <div className="service_spotlight_one"></div>
@@ -55,18 +72,26 @@ const ServicePage = () => {
           <div className="service_title_block">
             <div className="service_title">
               <h1 className="title_h1">
-                З <span>D.A.I.Wo</span> інвестування можна розпочати <br /> лише
-                з 1 центу.
+                З <span>D.A.I.Wo</span> інвестування можна розпочати лише з 1
+                центу.
               </h1>
               <h3 className="subtitle_h3">
-                Так-так, не зі 100$, 10$ чи 1$ – а з 1 центу! <br />
-                Це найдешевший вхід в інвестиції в світі.
+                Так-так, не зі 100$, 10$ чи 1$ – а з 1 центу! Це найдешевший
+                вхід в інвестиції в світі.
               </h3>
             </div>
 
             <div className="service_title_img">
-              <img className="page_coin_one" src='/img/coin1.svg' alt="Coin img" />
-              <img className="page_coin_two" src='/img/coin2.svg' alt="Coin img" />
+              <img
+                className="page_coin_one"
+                src="/img/coin1.svg"
+                alt="Coin img"
+              />
+              <img
+                className="page_coin_two"
+                src="/img/coin2.svg"
+                alt="Coin img"
+              />
             </div>
           </div>
           <div className="how_work">
@@ -79,39 +104,24 @@ const ServicePage = () => {
               <div className="how_work_animation">
                 <img
                   className="service_anim"
-                  src='/img/section1_animation.svg'
+                  src="/img/section1_animation.svg"
                   alt="animation"
                 />
               </div>
               <div className="how_work_info">
-                <img className="item_bar" src='/img/item_bar_service.svg' alt="" />
-                <div className="info_blok">
-                  <p className="info_blok_title">Проведення емісії</p>
-                  <p className="info_blok_subtitle">
-                    Нейромережа емітуватиме <br />
-                    свої активкойни, тобто <br />
-                    інвестиційні смарт-контракти.
-                  </p>
-                </div>
-                <div className="info_blok">
-                  <p className="info_blok_title">Інвестування</p>
-                  <p className="info_blok_subtitle">
-                    Вони будуть забезпечені програмним <br /> кодом мережі, який
-                    міститиме дані про <br />
-                    активи, в які мережа інвестуватиме.
-                  </p>
-                </div>
-                <div className="info_blok">
-                  <p className="info_blok_title">Винагорода</p>
-                  <p className="info_blok_subtitle">
-                    Монетизація інвесторів
-                    <br /> відбуватиметься шляхом отримання <br />
-                    процентного арбітража.
-                  </p>
-                </div>
-                <button className="btn_start">
-                  <a href="#">Почати</a>
-                </button>
+                <img
+                  className="item_bar"
+                  src="/img/item_bar_service.svg"
+                  alt="item"
+                />
+                {arr2.map((item, index) => (
+                  <div className="info_blok" key={index}>
+                    <p className="info_blok_title">{item.title}</p>
+                    <p className="info_blok_subtitle">{item.description}</p>
+                  </div>
+                ))}
+
+                <button className="btn_start">Почати</button>
               </div>
             </div>
           </div>

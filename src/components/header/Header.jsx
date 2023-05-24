@@ -3,6 +3,7 @@ import '../../style/header.scss'
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import WalletAndLang from './WalletAndLang';
+import Burger from './Burger';
 
 
 const Header = () => {
@@ -20,6 +21,7 @@ const Header = () => {
                         <Link to='/profile'>Профіль</Link>
                     </div>
                     <WalletAndLang/>
+                    <Burger/>
                 </div>
             </div>
         </header>

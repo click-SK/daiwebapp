@@ -18,6 +18,39 @@
     position: relative;
 }
 
+.about_spotlight_one{
+    position: absolute;
+    top: 700px;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.about_spotlight_two{
+    position: absolute;
+    top: 1700px;
+    left: -350px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.about_spotlight_three{
+    position: absolute;
+    top: 2050px;
+    right:-200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
 .about_small_animation{
     position: absolute;
     top: 1250px;
@@ -46,6 +79,7 @@
 }
 
 .title{
+    width: 700px;
     @extend %title_style;
     margin-bottom:50px;
     text-align: center;
@@ -53,6 +87,7 @@
 }
 
 .description{
+    width: 750px;
     @extend %subtitle_style;
     margin-bottom: 50px;
     text-align: center;
@@ -66,11 +101,7 @@
     justify-content: center;
     align-items: center;
     @extend %btn_primary;
-        a{
-            text-decoration: none;
-            color: $color_gray;
-            @extend %fs-normal;
-        }
+    @extend %fs-normal;
 }
 
 .extra__info_container{
@@ -96,6 +127,7 @@
 }
 
 .extra_info_text_subtitle{
+    width: 670px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
@@ -175,6 +207,7 @@
 }
 
 .why_daiwo_title{
+    width: 550px;
     font-weight: 600;
     font-size: 32px;
     line-height: 146%;
@@ -183,6 +216,7 @@
 }
 
 .why_daiwo_description{
+    width: 1150px;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
@@ -218,6 +252,7 @@
     height: 269px;
     top: 0;
     left: 0;
+    padding: 39px 44px;
     background-color: $color_gray;
     border-radius: 15px;
     transform: translate(-12px ,-10px);
@@ -243,9 +278,5 @@
     align-items: center;
     margin-top: 30px;
     @extend %btn_primary;
-        a{
-            text-decoration: none;
-            color: $color_gray;
-            @extend %fs-normal;
-        }
+    @extend %fs-normal;
 }

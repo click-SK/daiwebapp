@@ -1,6 +1,7 @@
 import React,{useState}  from 'react';
 import '../../style/profile.scss'
 import Transaction from './Transaction';
+import { Link } from 'react-router-dom';
 
 
 const TransactionHistory = () => {
@@ -43,9 +44,7 @@ const TransactionHistory = () => {
           ))}
 
           <div className="show_more">
-            <a className="btn_show_more" href="#">
-              Дізнатись більше
-            </a>
+            <Link className="btn_show_more">Дізнатись більше</Link>
             <img src="/icons/icon_arrow-forward.svg" alt="arrow" />
           </div>
         </div>

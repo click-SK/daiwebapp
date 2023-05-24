@@ -17,7 +17,7 @@ const Contacts = () => {
                         </div>
                     </div>
                     <div className="contacts_main_subscribe">
-                        <p><span>Почни створювати </span>свою фінансову  <br /> незалежність<span> вже сьогодні.</span></p>
+                        <p><span>Почни створювати </span>свою фінансову незалежність<span> вже сьогодні.</span></p>
                         <div className="input_subscribe">
                             <input className='input_email' type="text"  placeholder='Введіть Email'/>
                             <button className='subsctibe_btn'>Підписатись</button>
