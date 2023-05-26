@@ -11,7 +11,7 @@ const MainPage = () => {
     return (
         <div className='MainPage'>
             <div className="container">
-                <div className='background'>
+                {/* <div className='background'>
                     <AnimWave/>
                 </div>
                 <div className="main_page_background">
@@ -24,7 +24,7 @@ const MainPage = () => {
                     <div className="main_small_animation">
                         <img src="./img/main_small_bg-anim.svg" alt="animation" />
                     </div>
-                </div>
+                </div> */}
                 <div className="main_wrap">
                     <div className="main_text">
                         <div className="main_title">
