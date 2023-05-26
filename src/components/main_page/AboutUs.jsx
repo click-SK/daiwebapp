@@ -5,7 +5,7 @@ import '../../style/aboutUs.scss'
 
 const AboutUs = () => {
     return (
-        <div className='aboutUs'>
+        <div className='about_us'>
             <div className="about_wrap">
                 <div className="about_info">
                     <div className="about_info_text">
@@ -14,8 +14,9 @@ const AboutUs = () => {
                         <div className="about_info_subtitle">Він працює 24/7/365, ніколи не втомлюється і допомагає заробляти гроші на інвестуванні. Платформа для токенізації бізнесів, бізнес-процесів, будь-яких фінансових послуг, активів і пасивів.</div>
                     </div>
                     <div className="about_info_pictures">
-                        <img className='logo' src='/img/logo_main.svg' alt="logo" />
                         <img className='img_about' src='/img/aboutus_image.png' alt="image" />
+                        <img className='logo' src='/img/logo_main.svg' alt="logo" />
+
                     </div>
                 </div>
             </div>
