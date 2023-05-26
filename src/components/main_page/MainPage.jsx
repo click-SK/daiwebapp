@@ -14,15 +14,24 @@ const MainPage = () => {
                 <div className='background'>
                     <AnimWave/>
                 </div>
+                <div className="main_page_background">
+                    <div className="main_spotlight_one"></div>
+                    <div className="main_spotlight_two"></div>
+                    <div className="main_spotlight_three"></div>
+                    <div className="main_big_animation">
+                        <img src="./img/main_big_bg-anim.svg" alt="animation" />
+                    </div>
+                    <div className="main_small_animation">
+                        <img src="./img/main_small_bg-anim.svg" alt="animation" />
+                    </div>
+                </div>
                 <div className="main_wrap">
                     <div className="main_text">
                         <div className="main_title">
-
-                        <span>Почни створювати</span>свою<br/>фінансову незалежність <br/> 
-                        <span>вже сьогодні</span>
+                        <span>Почни створювати</span> свою фінансову незалежність <span>вже сьогодні</span>
                         </div>
                         <div className="main_subtitle">
-                        Так-так, не зі 100$, 10$ чи 1$ – а з 1 центу! <br />
+                        Так-так, не зі 100$, 10$ чи 1$ – а з 1 центу! 
                         Це найдешевший вхід в інвестиції в світі.
                         </div>
                         <div className="main_btn">

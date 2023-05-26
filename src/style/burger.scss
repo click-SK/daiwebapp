@@ -1,0 +1,248 @@
+@import'./main.scss';
+@import'./tamplates.scss';
+@import'./colors.scss';
+
+
+
+@media(min-width: 1200px){
+    .burger_menu_btn{
+        display: none;
+    }
+}
+
+//.......................Screen 1200px
+
+@media(max-width: 1200px){
+    .burger_menu{
+        background: $color_background;
+        padding: 30px 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .burger_menu_wrapper{
+        width: 75rem;
+        margin: 0 auto;
+    }
+
+    .burger_menu_header{
+        max-width:71.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger_logo{
+        width: 165px;
+        height: 50px;
+    }
+    .burger_close{
+        width: 20px;
+        height: 20px;
+    }
+
+    .burger_menu_link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        padding-bottom: 55px;
+            a{
+                width: 75%;
+                text-align: center;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.5;
+                color: $color_white;
+                text-decoration: none;
+                padding-bottom: 15px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                margin-top: 15px;
+            }
+    }
+
+    .burger_menu_link a:last-child{
+        border-bottom:none;
+        padding-bottom: 0;
+
+    }
+
+    .burger_menu_lang,.burger_menu_mail{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .burger_menu_mail{
+        margin-top: 30px;
+    }
+
+    .burger_menu_wallet{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//.......................Screen 768px
+
+@media(max-width: 768px){
+        .burger_menu_btn{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .burger_menu{
+        background: $color_background;
+        padding: 30px 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .burger_menu_wrapper{
+        width: 64rem;
+        margin: 0 auto;
+    }
+
+    .burger_menu_header{
+        width: 60.813rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger_logo{
+        width: 115px;
+        height: 30px;
+    }
+    .burger_close{
+        width: 20px;
+        height: 20px;
+    }
+
+    .burger_menu_link{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+        padding-bottom: 25px;
+            a{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.5;
+                color: $color_white;
+                text-decoration: none;
+                padding-bottom: 25px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                margin-top: 25px;
+            }
+    }
+
+    .burger_menu_link a:last-child{
+        border-bottom:none;
+        padding-bottom: 0;
+
+    }
+
+    .burger_menu_lang,.burger_menu_mail{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .burger_menu_wallet{
+        margin-top: 84px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media(max-width: 390px){
+        .burger_menu_btn{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .burger_menu{
+        background: $color_background;
+        padding: 30px 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .burger_menu_wrapper{
+        width: 390px;
+        margin: 0 auto;
+    }
+
+    .burger_menu_header{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger_logo{
+        width: 115px;
+        height: 30px;
+    }
+    .burger_close{
+        width: 20px;
+        height: 20px;
+    }
+
+    .burger_menu_link{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        padding-bottom: 25px;
+            a{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.5;
+                color: $color_white;
+                text-decoration: none;
+                padding-bottom: 25px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                margin-top: 25px;
+            }
+    }
+
+    .burger_menu_link a:last-child{
+        border-bottom:none;
+        padding-bottom: 0;
+
+    }
+
+    .burger_menu_lang,.burger_menu_mail{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .burger_menu_wallet{
+        margin-top: 84px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+

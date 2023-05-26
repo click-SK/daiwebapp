@@ -23,7 +23,7 @@ const FAQ = () => {
             <div className="faq_wrap">
                 <div className="faq_btn">FAQ</div>
                 <div className="faq_answer">
-                    <div className="faq_answer_text">Відповіді на найбільш поширені <br /> запитання – все, що вам потрібно знати</div>
+                    <div className="faq_answer_text">Відповіді на найбільш поширені запитання – все, що вам потрібно знати</div>
                     <div className="faq_answer_logo">
                         <img src='/img/logo_second.svg' alt="logo" />
                     </div>
@@ -40,7 +40,7 @@ const FAQ = () => {
 
                
                 <div className="know_more">
-                <a className='btn_know_more' href="#">Дізнатись більше</a>
+                <button className='btn_know_more'>Дізнатись більше</button>
                 <img src='/icons/icon_arrow-forward.svg' alt="" />
                 </div>
             </div>

@@ -2,8 +2,6 @@ import './../style/footer.scss'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './header/Logo';
-// import globIcon from './img/icons/icons_language.svg'
-// import emailFooter from '../../public/icons/icon_email-footer.svg'
 
 
 const Footer = () => {

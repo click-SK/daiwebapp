@@ -29,16 +29,11 @@
     border: 1.5px solid $button_color;
     border-radius: 10px;
     color: $color_white;
-        a{
-        
-            text-decoration: none;
-            color: $color_white;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.5;
-        
-        
-        };
+    text-decoration: none;
+    color: $color_white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 %btn_slider{

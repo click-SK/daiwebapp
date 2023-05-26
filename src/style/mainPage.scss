@@ -3,12 +3,66 @@
 @import'./tamplates.scss';
 @import'./colors.scss';
 
+//......................Background
 
-
-.main_wrap{
-    display: flex;  
+.main_page_background{
+    position: relative;
 }
 
+.main_spotlight_one{
+    position: absolute;
+    top: 1500px;
+    right: -400px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.main_spotlight_two{
+    position: absolute;
+    top: 2400px;
+    left: -400px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.main_spotlight_three{
+    position: absolute;
+    top: 2950px;
+    right:-300px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(7, 237, 210, 0.12) 0%, rgba(156, 99, 247, 0.01) 100%);
+    z-index: -99;
+}
+
+.main_big_animation{
+    position: absolute;
+    top: 825px;
+    right: -100px;
+    z-index: -99;
+}
+.main_small_animation{
+    position: absolute;
+    top: 1950px;
+    right: -50px;
+    z-index: -99;
+
+}
+//..............Main
+.main_wrap{
+    display: flex;
+}
+
+.main_text{
+
+}
 
 .main_title{
     font-weight: 600;
@@ -23,6 +77,7 @@
 }
 
 .main_subtitle{
+    width: 500px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
@@ -70,11 +125,11 @@
 }
 
 // .............Card
-
-.main_card{
-     margin-left: 83px;
-
+.main_wrap{
+    display: flex;
+    column-gap: 5rem;
 }
+
 
 .card_rate{
     width: 442px;
@@ -145,4 +200,93 @@
     z-index: -99;
     opacity: 50%;
 
+}
+
+
+
+//...........Adaptive
+
+
+//(1100px)
+
+@media  (max-width:1100px) {
+
+    .container{
+        max-width: 62.5rem;
+        padding: 0 20px;
+    }
+
+    .main_wrap{
+        margin: 0 auto;
+        display: flex;
+    }
+    
+    .main_text{
+        width: 50%;
+    }
+
+    .main_title{
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 1.5;
+        letter-spacing: 0.045em;
+
+    
+    }
+    
+    .main_subtitle{
+        max-width: 400px;
+        font-weight: 400;
+        font-size: 20px;
+
+    }
+
+    .main_card{
+        width: 50%;
+    }
+
+    .card_rate,.duplicat_rate{
+        max-width: 442px;
+        max-height: 221px;
+
+    }
+
+    .card_air,.air_duplicat{
+        max-width: 442px;
+        max-height: 221px;
+    }
+
+    .card_title{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .card_item_one{
+        img{
+            max-width: 410px;
+            max-height: 56px;
+        }
+    
+    }
+
+    .main_btn_one{
+        max-width: 183px;
+        max-height: 50px;
+
+    }
+    
+    .main_btn_two{
+        max-width: 183px;
+        max-height: 50px;
+    }
+    
+    .email{
+        max-width: 166px;
+        max-height: 62px;
+            img{
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+            }
+    }
 }
