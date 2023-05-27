@@ -66,18 +66,18 @@
 
 .coin_one{
     position: absolute;
-    width: 486px;
-    height: 307px;
-    top: 220px;
-    left: 30px;
+    width: 446px;
+    height: 287px;
+    top: 30%;
+    left: -4rem;
 }
 
 .coin_two{
     position: absolute;
-    width: 519px;
-    height: 315px;
-    top: 170px;
-    left: 220px;
+    width: 480px;
+    height: 293px;
+    top: 25%;
+    left: 10.5rem;
     z-index: -1;
 
 }
@@ -138,6 +138,7 @@
 //...........Adaptive
 
 
+
 //(1100px)
 
 @media  (max-width:1100px){
@@ -180,16 +181,80 @@
     .coin_one{
         max-width: 386px;
         max-height: 207px;
-
+        position: absolute;
+        top: 35%;
+        left: -3rem;
     }
     
     .coin_two{
         position: absolute;
         max-width: 386px;
         max-height: 207px;
-        top: 29%;
-        left: 38%;
-        z-index: -1;
+        top: 31%;
+        left: 23%;
     
     }
+
+
+}
+
+//(1000px)
+
+@media  (min-width:1000px){
+    .coin_adaptive{
+        display: none;
+    }
+
+
+
+}
+
+@media  (max-width:1000px){
+
+    .service_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .service_info_subtitle{
+        margin: 150px 0 40px 0 ;
+    }
+
+
+    .service_info_pictures{
+       display: none;
+    }
+    
+    .pictures_coin{
+        position: relative;
+    }
+
+    .coin_one_adaptive{
+        max-width: 105px;
+        max-height: 65px;
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+
+
+    }
+    
+    .coin_two_adaptiv{
+        position: absolute;
+        max-width: 105px;
+        max-height: 65px;
+        top: 0;
+        right: -10%;
+        z-index: -5 ;
+    }
+
+    
+    .service_info_extra{
+        display: none;
+    }
+
+
 }
