@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, Children, cloneElement } from 'react'
 // import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import Page from './Page'
 import { CarouselContext } from './carousel-context'
-import './Carousel.css'
+import './Carousel1.css'
 
 
 const TRANSITION_DURATION = 300
@@ -113,7 +113,7 @@ export const Carousel = ({ children, infinite, loop, control, interval }) => {
         {/* {control && 
           <FaChevronLeft className="arrow" onClick={handleLeftArrowClick} />
         } */}
-        <div className="window" ref={windowElRef}>
+        <div className="window1" ref={windowElRef}>
           <div
             className="all-pages-container"
             style={{

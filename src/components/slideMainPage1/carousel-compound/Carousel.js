@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, Children, cloneElement } from 'react'
 // import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import Page from './Page'
 import { CarouselContext } from './carousel-context'
-import './Carousel.css'
+import './Carousel2.css'
 
 
 const TRANSITION_DURATION = 300

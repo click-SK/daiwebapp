@@ -457,6 +457,7 @@
 
 .transaction_sum{
     color: $button_color;
+    min-width: 70px;
     // width: 33.333%;
     display: flex;
     justify-content: flex-end;
@@ -668,6 +669,20 @@
 
     .number_item_prof {
         width: 100%;
+    }
+    .transaction_date_item{
+        flex-direction: column;
+
+        h5{
+            width: 100%;
+            font-size: 18px;
+        }
+        p{
+            width: 100%;
+            justify-content: left;
+            font-size: 16px;
+            color: #9C9C9C;
+        }
     }
 
 }

@@ -4,10 +4,11 @@
   align-items: center;
 }
 
-.window {
+.window1 {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  padding: 24px 0;
 }
 
 .all-pages-container {
