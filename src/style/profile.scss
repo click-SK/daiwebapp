@@ -48,19 +48,25 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     padding: 0 0 30px 0;
     margin-bottom: 37px;
+    width: 100%;
 }
 
 
 .air__prof{
-    width: 387px;
+    width: 35%;
+    max-width: 387px;
     height: 190px;
     background: $color_bg_profile;
     border-radius: 15px;
     display: flex;
+    margin: 5px;
+    padding: 0 25px;
+    .card_title_prof{
+        padding-top: 25px;
+    }
 }
 
 .card_title_prof{ 
-    padding: 7% 0 0 7%;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
@@ -72,20 +78,28 @@
 }
 
 .rate_prof{
-    width: 387px;
+    width: 35%;
+    max-width: 387px;
     height: 190px;
     background: $color_bg_profile;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    margin: 5px;
 }
 
 .number_item{
-    padding: 10% 0 0 7%;
+    padding: 40px 0 0 0;
         img{
         width: 340px;
         height: 50px;
         }
+}
+
+.card_item_one{
+    width: 100%;
 }
 
 
@@ -94,6 +108,7 @@
 .profile_main_desk{
     display: flex;
     column-gap: 20px;
+    width: 100%;
 }
 
 //................Total number
@@ -108,14 +123,16 @@
 .desk_one{
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .total_number{
-    width: 557px;
-    height: 201px;
+    width: 100%;
+    max-width: 557px;
+    min-height: 201px;
     background: $color_bg_profile;
     border-radius: 15px;
-    padding: 25px 0 0 20px;
+    padding: 25px;
 }
 
 .total_number_item{
@@ -125,8 +142,18 @@
 
 }
 
+.number_item_prof{
+    width: 50%;
+}
+
 .number_item{
     display: flex;
+    width: 100%;
+    font-size: 20px;
+}
+
+.rate_list_item{
+    font-size: 20px;
 }
 
 .coin_name{
@@ -138,25 +165,34 @@
 }
 
 .number_block{
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 58px;
     background: #2B3649;
     border-radius: 5px;
     margin-top: 5px;
-    padding: 14px 0 0 17px;
+    display: flex;
+    align-items: center;
 
-        img{
-            width: 179px;
-            height: 30px;
-            
-        }
+}
+
+.analysis_chart{
+    width: 25%;
+}
+
+.chart_info{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
 }
 
 //...........Profile analysis
 
 .profile_analysis{
-    width: 557px;
-    height: 333px;
+    width: 100%;
+    max-width: 557px;
+    min-height: 333px;
     background: $color_bg_profile;
     border-radius: 15px;
     margin-top: 20px;
@@ -171,10 +207,18 @@
 
 .data_block{
     display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @extend %fs-normal;
     color: $color_white;
         h5{
-            padding-right: 40px;
+            
+            p{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1.5;
+                color: $color_purple;  
+            }
         }
 }
 
@@ -193,7 +237,9 @@
 
 .chart_info_coin{
     display: flex;
-    margin-top: 91px;
+    margin-top: 10%;
+    width: 100%;
+    justify-content: space-between;
         h5{
             padding-right: 40px;
         }
@@ -226,11 +272,15 @@
 //...........Exchanger
 
 .desk_two{
-    width: 623px;
-    height: 554px;
+    width: 100%;
+    max-width: 623px;
+    min-height: 554px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background: $color_bg_profile;
     border-radius: 15px;
-    padding: 25px 0 58px 30px;
+    padding: 25px;
 }
 
 .line_one_header{
@@ -251,9 +301,11 @@
 .exchange_input_block{
     display: flex;
     margin-top: 18px;
+    width: 100%;
 }
 .exchange_input{
-    width: 467px;
+    width: 100%;
+    max-width: 467px;
     height: 60px;
     background: #2B3649;
     border-radius: 5px 0 0 5px;
@@ -265,7 +317,7 @@
 }
 
 .coin_selector{
-    width: 87px;
+    max-width: 87px;
     height: 60px;
     background: #2B3649;
     border-radius:  0 5px 5px 0 ;
@@ -326,9 +378,16 @@
     margin-left: 10px;
 }
 
+.btn_wraper_exchange{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .exchange_btn{
     margin-top: 20px;
-    width: 555px;
+    width: 60%;
+    max-width: 555px;
     height: 60px;
     @extend %fs-normal;
     background: $button_color;
@@ -336,6 +395,10 @@
 }
 
 //.......................Transaction history
+
+.TransactionHistory{
+    width: 100%;
+}
 
 .transaction_history{
     min-height: 377px;
@@ -354,11 +417,12 @@
     padding-bottom: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .transaction_name{
-    width: 33.333%;
+    // width: 33.333%;
     display: flex;
     align-items: center;
 
@@ -368,13 +432,32 @@
 }
 
 .transaction_date{
-    width: 33.333%;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
 }
+
+.transaction_date_item{
+    display: flex;
+    width: 100%;
+    h5{
+        width: 30%;
+        max-width: 250px;
+    }
+    p{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .transaction_sum{
     color: $button_color;
-    width: 33.333%;
+    // width: 33.333%;
     display: flex;
     justify-content: flex-end;
 
@@ -401,4 +484,276 @@
     line-height: 1.5;
     color: $button_color;
 
+}
+
+
+@media  (max-width:1000px){
+
+    .profile_indicators{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .air__prof{
+        width: 100%;
+    }
+    .rate_prof{
+        width: 100%;
+    }
+
+}
+
+@media  (max-width:830px){
+
+    .analysis_board{
+        margin-top: 15px;
+    }
+
+    .data_block{
+        flex-direction: column;
+    }
+
+    .analysis_chart {
+        width: 40%;
+    }
+
+    .chart_info {
+        width: 42%;
+        padding-left: 0; 
+    }
+
+    .data_block{
+        h5{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+@media  (max-width:770px){
+
+    .profile_analysis{
+        position: relative;
+    }
+
+
+    .analysis_board{
+        column-gap: 0;
+    }
+    .analysis_board{
+
+    }
+
+    .data_block{
+
+    }
+
+    .analysis_chart {
+
+    }
+
+    .chart_info {
+
+    }
+
+    .data_block{
+        h5{
+            flex-direction: column;
+        }
+    }
+
+    .chart_info {
+        width: 40%;
+        padding-left: 10px;
+    }
+
+    .chart_info_coin {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        justify-content: flex-start;
+    }
+    .analysis_chart {
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+@media  (max-width:750px){
+    .profile_main_desk{
+        flex-direction: column;
+    }
+    .desk_one{
+        width: 100%;
+        margin-bottom: 21px;
+    }
+
+    .rate_list{
+        padding: 0 20% ;
+        align-items: center;
+    }
+
+    .number_block{
+        max-width: 100%;
+    }
+
+    .rate_list_item{
+        font-size: 23px;
+    }
+
+    .total_number {
+        max-width: 100%;
+    }
+
+    .profile_analysis{
+        max-width: 100%;
+    }
+
+    .analysis_chart img {
+        width: 50%;
+    }
+
+    .chart_info_coin {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        justify-content: flex-end;
+        width: 80%;
+    }
+
+    .total_number_item{
+        flex-direction: column; 
+    }
+
+    .number_item_prof {
+        width: 100%;
+    }
+
+    .total_number_item{
+        flex-direction: column; 
+    }
+    
+    .number_item_prof {
+        width: 100%;
+    }
+
+    .rate_list_item{
+        font-size: 16px;
+    }
+
+    .desk_two{
+        max-width: 100%;
+    }
+}
+@media  (max-width:530px){
+
+    .profile_main_desk{
+        flex-direction: column;
+    }
+
+    .desk_one{
+        width: 100%;
+        margin-bottom: 21px;
+    }
+
+
+    .total_number_item{
+        flex-direction: column; 
+    }
+
+    .number_item_prof {
+        width: 100%;
+    }
+
+}
+
+@media  (max-width:470px){
+
+    .desk_one {
+        width: 100%;
+    }
+
+    .total_number_item {
+        flex-direction: column;
+    }
+
+    .profile_main_desk {
+        flex-direction: column;
+    }
+
+    .analysis_board{
+        flex-direction: column;
+    }
+    .chart_info{
+        width: 100%;
+        padding-left: 0px; 
+    }
+
+    .data_block {
+        flex-direction: column;
+        margin: 30px 0;
+        h5 {
+        flex-direction: row;
+    }}
+
+}
+
+@media  (max-width:380px){
+
+    .buster_item{
+        padding: 0;
+        margin: 0 5% 0 0;
+    }
+
+    .total_amount_sum{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        h5{
+           font-size: 18px;
+        }
+    }
+
+    .exchange_btn{
+        height: 40px;
+    }
+
+
+}
+
+
+
+@media  (max-width:340px){
+
+    .transaction_history{
+        padding: 14px;
+    }
+
+    .transaction_name{
+        img{
+            margin-right: 10px;
+        }
+    }
+    .transaction_date_item{
+        flex-direction: column;
+
+        h5{
+            width: 100%;
+            font-size: 18px;
+        }
+        p{
+            width: 100%;
+            justify-content: left;
+            font-size: 16px;
+            color: #9C9C9C;
+        }
+    }
+    .transaction_sum{
+        font-size: 14px;
+    }
 }

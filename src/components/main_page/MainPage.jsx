@@ -5,15 +5,20 @@ import Service from '../main_page/Service';
 import AnimWave from '../wave/AnimWave';
 import FAQ from '../main_page/FAQ';
 import Contacts from '../main_page/Contacts';
+import Slide from '../slideMainPage1/Slide';
+
 
 
 const MainPage = () => {
+
+    const arrNumb = new Array(27).fill(1);
+
     return (
-        <div className='MainPage'>
+        <div className='main_page'>
             <div className="container">
                 {/* <div className='background'>
                     <AnimWave/>
-                </div>
+                </div> */}
                 <div className="main_page_background">
                     <div className="main_spotlight_one"></div>
                     <div className="main_spotlight_two"></div>
@@ -24,7 +29,7 @@ const MainPage = () => {
                     <div className="main_small_animation">
                         <img src="./img/main_small_bg-anim.svg" alt="animation" />
                     </div>
-                </div> */}
+                </div>
                 <div className="main_wrap">
                     <div className="main_text">
                         <div className="main_title">
@@ -44,16 +49,23 @@ const MainPage = () => {
                         </div>
                     </div>
                     <div className="main_card">
-                        <div className="card_rate">
+                        <div className="cart_item card_rate">
                         <div className="duplicat_rate">
                             <div className="card_title">Rate:</div>
                             <div className="card_item_one">
-                                <img src='/img/rate_item.svg' alt="Item" />
+                            <ul className='rate_list'>
+                                {arrNumb.map((item, idx) => (
+                                    <li className='rate_list_item' key={idx}>
+                                    {item}
+                                    {idx === 14 && <span>,</span>}
+                                    </li>
+                                ))}
+                                </ul>
                             </div>
                         </div>
                         </div>
                         
-                        <div className="card_air">
+                        <div className="cart_item card_air">
                         <div className="air_duplicat">
                             <div className="card_title">Air:</div>
                             <div className="card_item_two">
@@ -61,6 +73,9 @@ const MainPage = () => {
                             </div>
                         </div>
                         </div>
+                    </div>
+                    <div className='first_slide'>
+                        <Slide/>
                     </div>
                 </div>
                 <AboutUs/>

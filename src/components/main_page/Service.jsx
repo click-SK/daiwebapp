@@ -12,12 +12,12 @@ const Service = () => {
                     <div className="service_info_text">
                         <button className="btn_slider">Послуга</button>
                         <div className="service_info_title">Нейромережа <span>D.A.I.Wo</span> емітуватиме свої активкойни, тобто інвестиційні <span>смарт-контракти.</span> </div>
-                        <div className='coin_adaptive'>
+                        {/* <div className='coin_adaptive'>
                             <div className="pictures_coin">
                                 <img className='coin_one_adaptive' src='/img/coin1.svg' alt="Coin img" />
                                 <img className='coin_two_adaptiv' src='/img/coin2.svg' alt="Coin img" />
                             </div>
-                        </div>
+                        </div> */}
                         <div className="service_info_subtitle"><p className='p_one'>Вони будуть забезпечені програмним кодом мережі, який міститиме дані про активи, в які мережа інвестуватиме.</p>
                         <p className='p_two'> Монетизація інвесторів відбуватиметься шляхом отримання процентного арбітража. Це дасть змогу учасникам ринку легко заробляти гроші, шляхом об’єднання своїх фінансових можливостей.</p>
                        </div>

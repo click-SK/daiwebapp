@@ -8,6 +8,7 @@ import Header from './components/header/Header';
 import {Routes, Route} from 'react-router-dom';
 import Profile from './components/profile_page/Profile';
 import Footer from './components/Footer';
+import './style/main.scss'
 
 
 

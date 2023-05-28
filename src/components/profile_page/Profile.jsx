@@ -3,13 +3,18 @@ import TransactionHistory from './TransactionHistory';
 
 
 const Profile = () => {
+
+    const arrNumb = new Array(27).fill(1);
+    const arrNum2 = new Array(15).fill(1);
+
+    
     return ( 
         <div className="profile">
-            <div className="main_background">
+            {/* <div className="main_background">
                 <div className="profile_spotlight_one"></div>
                 <div className="profile_spotlight_two"></div>
                 <div className="profile_spotlight_three"></div>
-            </div>
+            </div> */}
             <div className="container">
                 <div className="profile_indicators">
                     <div className="air__prof">
@@ -21,13 +26,31 @@ const Profile = () => {
                     <div className="rate_prof">
                         <div className="card_title_prof">Rate:</div>
                         <div className="number_item">
-                            <img src='/img/rate_item.svg' alt="Item" />
+                        <div className="card_item_one">
+                            <ul className='rate_list'>
+                                {arrNumb.map((item, idx) => (
+                                    <li className='rate_list_item' key={idx}>
+                                    {item}
+                                    {idx === 14 && <span>,</span>}
+                                    </li>
+                                ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className="rate_prof">
                         <div className="card_title_prof">Emission:</div>
                         <div className="number_item">
-                            <img src='/img/rate_item.svg' alt="Item" />
+                        <div className="card_item_one">
+                            <ul className='rate_list'>
+                                {arrNumb.map((item, idx) => (
+                                    <li className='rate_list_item' key={idx}>
+                                    {item}
+                                    {idx === 14 && <span>,</span>}
+                                    </li>
+                                ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -39,13 +62,31 @@ const Profile = () => {
                                 <div className="number_item_prof">
                                     <h4 className='coin_name'>USDT</h4>
                                     <div className="number_block">
-                                        <img src='/img/total_num.svg' alt="total" />
+                                    <div className="card_item_one">
+                                        <ul className='rate_list'>
+                                            {arrNum2.map((item, idx) => (
+                                                <li className='rate_list_item' key={idx}>
+                                                {item}
+                                                {idx === 11 && <span>,</span>}
+                                                </li>
+                                            ))}
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="number_item_prof">
                                     <h4 className='coin_name'>Daiwo</h4>
                                     <div className="number_block">
-                                        <img src='/img/total_num.svg'  alt="total" />
+                                    <div className="card_item_one">
+                                        <ul className='rate_list'>
+                                            {arrNum2.map((item, idx) => (
+                                                <li className='rate_list_item' key={idx}>
+                                                {item}
+                                                {idx === 11 && <span>,</span>}
+                                                </li>
+                                            ))}
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -59,14 +100,11 @@ const Profile = () => {
                                 <div className="chart_info">
                                     <div className="chart_info_data">
                                         <div className="data_block">
-                                            <h5>День</h5>
-                                            <h5>Тиждень</h5>
-                                            <h5>Місяць</h5>
+                                            <h5>День <p>$475</p></h5>
+                                            <h5>Тиждень <p>$3.327</p></h5>
+                                            <h5>Місяць <p>$12.131</p></h5>
                                         </div>
                                         <div className="amount_block">
-                                            <p>$475</p>
-                                            <p>$3.327</p>
-                                            <p>$12.131</p>
                                         </div>
                                     </div>
                                     <div className="chart_info_coin">
@@ -113,7 +151,9 @@ const Profile = () => {
                             <p className='total_sum'>123456</p>
                             <img className='coin_icon' src='/icons/icon_daiwo_coin.svg' alt="coin" />
                         </div>
-                        <button className='exchange_btn'>Обміняти</button>
+                        <div className='btn_wraper_exchange'>
+                            <button className='exchange_btn'>Обміняти</button>
+                        </div>
                     </div>
                 </div>
                 <TransactionHistory/>

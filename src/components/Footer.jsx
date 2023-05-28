@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer_container">
                 <div className="footer_nav">
                     <Logo/>
-                    <div className='links'>
+                    <div className='links footer_nav_display'>
                         <Link to='/'>Головна</Link>
                         <Link to='/about-us'>Про нас</Link>
                         <Link to='/service'>Послуга</Link>
