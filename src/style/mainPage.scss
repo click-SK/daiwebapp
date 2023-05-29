@@ -7,7 +7,20 @@
 .main_page{
     width: 100%;
     overflow-x: hidden;
+    position: relative;
     padding-top: 20px;
+    position: relative;
+    margin: auto;
+}
+
+.background{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+    opacity: 50%;
+
 }
 
 //......................Background
@@ -225,15 +238,7 @@
     }
 }
 
-.background{
-    position: absolute;
-    top: 60%;
-    left: 0;
-    width: 100%;
-    z-index: -99;
-    opacity: 50%;
 
-}
 
 .first_slide{
     display: none;

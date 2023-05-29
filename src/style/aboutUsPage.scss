@@ -5,7 +5,13 @@
 //...............About background
 
 .about_us_page{
-
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 20px;
+    position: relative;
+    margin: auto;
 }
 
 .container{
@@ -16,7 +22,7 @@
 
 .background{
     // position: absolute;
-    top: 60%;
+    top: 10%;
     left: 0;
     width: 100%;
     // max-width: 1200px;

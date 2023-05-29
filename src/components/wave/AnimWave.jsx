@@ -4,7 +4,7 @@ import DisplayArray from './DisplayArray';
 
 const AnimWave = () => {
     return (
-        <div>
+        <div className='anim_wrap_wave'>
             <div className='wave__wrap wrap_1'>
                 <div className='abs'>
                     <div className='wave__line'>

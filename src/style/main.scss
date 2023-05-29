@@ -1,9 +1,26 @@
 @import'./colors.scss';
 @import'./tamplates.scss';
 
-.app{
-    max-width: 1440px;
-    margin: auto auto;
+.App{
+    // max-width: 1440px;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 20px;
+    position: relative;
+    margin: auto;
+    // height: 100%;
+}
+
+
+.background{
+    position: absolute;
+    top: 373px;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+    opacity: 50%;
+
 }
 
 body{
@@ -32,6 +49,7 @@ h2{
     letter-spacing: 0.045em;
     color: $color_white;
 }
+
 
 
 

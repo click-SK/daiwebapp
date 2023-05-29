@@ -23,9 +23,9 @@ const MainPage = () => {
                     <div className="main_spotlight_one"></div>
                     <div className="main_spotlight_two"></div>
                     <div className="main_spotlight_three"></div>
-                    <div className="main_big_animation">
+                    {/* <div className="main_big_animation">
                         <img src="./img/main_big_bg-anim.svg" alt="animation" />
-                    </div>
+                    </div> */}
                     <div className="main_small_animation">
                         <img src="./img/main_small_bg-anim.svg" alt="animation" />
                     </div>
