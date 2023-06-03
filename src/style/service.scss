@@ -72,14 +72,17 @@
 .service_info_pictures{
     position: absolute;
     top: 30%;
-    right: 1px;
+    right: 45%;
 }
 
 .coin_one{
+    position: absolute;
     width: 446px;
     height: 287px;
-    // top: 30%;
-    // left: -4rem;
+    top: 80px;
+    left: 100rem;
+    // animation: coin_anim 2s linear ; /* Додайте анімацію "spin" */
+    
 }
 
 .coin_two{
@@ -87,27 +90,73 @@
     width: 480px;
     height: 293px;
     top: 25%;
-    left: 10.5rem;
+    left: 100rem;
     z-index: -1;
+    // animation: coin_anim2 3s linear ; /* Додайте анімацію "spin" */
+}
 
+.coin_anim{
+    animation: coin_anim 1.5s linear ; /* Додайте анімацію "spin" */
+    left: -4rem;
+}
+.coin_anim2{
+    animation: coin_anim2 2s linear ; /* Додайте анімацію "spin" */
+    left: 10.5rem;
+}
+
+@keyframes coin_anim {
+    0% {
+        left: 100rem;
+        transform: rotate(360deg); /* Початковий кут обертання */
+    }
+    100% {
+        left: -4rem;
+        transform: rotate(0deg); /* Кут обертання після завершення анімації */
+    }
+}
+@keyframes coin_anim2 {
+    0% {
+        left: 100rem;
+        transform: rotate(360deg); /* Початковий кут обертання */
+    }
+    100% {
+        left: 10.5rem;
+        transform: rotate(0deg); /* Кут обертання після завершення анімації */
+    }
 }
 
 .service_info_extra{
     height: 108px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .info_block{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
     border-right: 1px solid #fff;
     font-weight: 600;
+    max-width: 30%;
+    height: 80%;
     padding-right: 57px;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.5;
     color: $color_white;
+    
         span{
             color: $color_purple;
+        }
+        p{
+            transition: all 0.5s ease-in-out; 
+            cursor: default;
+            
+            &:hover{
+                
+                scale: 1.1;
+            }
         }
 }
 
