@@ -1,4 +1,5 @@
-import React,{useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useWindowScroll } from 'react-use';
 import '../../style/servicePage.scss'
 import AnimWave from '../wave/AnimWave';
 
@@ -6,6 +7,24 @@ import AnimWave from '../wave/AnimWave';
 
 
 const ServicePage = () => {
+  const coinOneRef = useRef(null);
+  const coinTwoRef = useRef(null);
+  const [coinOneInView, setCoinOneInView] = useState(false);
+  const [coinTwoInView, setCoinTwoInView] = useState(false);
+  const { y: scrollY } = useWindowScroll();
+
+  useEffect(() => {
+    const coinOneElement = coinOneRef.current;
+    const coinTwoElement = coinTwoRef.current;
+    if (coinOneElement) {
+      const { top, bottom } = coinOneElement.getBoundingClientRect();
+      setCoinOneInView(top < window.innerHeight && bottom >= 0);
+    }
+    if (coinTwoElement) {
+      const { top, bottom } = coinTwoElement.getBoundingClientRect();
+      setCoinTwoInView(top < window.innerHeight && bottom >= 0);
+    }
+  }, [scrollY]);
 
     const [arr2,setArr2] = useState([
 
@@ -88,12 +107,14 @@ const ServicePage = () => {
 
             <div className="service_title_img">
               <img
-                className="page_coin_one"
+                ref={coinOneRef}
+                className={`page_coin_one ${coinOneInView ? 'coin_anim' : ''}`} 
                 src="/img/coin1.svg"
                 alt="Coin img"
               />
               <img
-                className="page_coin_two"
+               ref={coinTwoRef}
+               className={`page_coin_two ${coinTwoInView ? 'coin_anim2' : ''}`}  
                 src="/img/coin2.svg"
                 alt="Coin img"
               />
@@ -109,7 +130,12 @@ const ServicePage = () => {
               <div className="how_work_animation">
                 <img
                   className="service_anim"
-                  src="/img/section1_animation.svg"
+                  src="/img/section1_animation1.svg"
+                  alt="animation"
+                />
+                <img
+                  className="service_anim2"
+                  src="/img/section1_animation2.svg"
                   alt="animation"
                 />
               </div>
