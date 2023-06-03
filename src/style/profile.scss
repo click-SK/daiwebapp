@@ -166,13 +166,14 @@
 
 .number_block{
     width: 100%;
-    max-width: 250px;
+    // max-width: 250px;
     height: 58px;
     background: #2B3649;
     border-radius: 5px;
     margin-top: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 
 }
 
