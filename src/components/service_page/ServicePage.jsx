@@ -128,11 +128,11 @@ const ServicePage = () => {
             </div>
             <div className="how_work_wrap">
               <div className="how_work_animation">
-                <img
-                  className="service_anim"
-                  src="/img/section1_animation1.svg"
-                  alt="animation"
-                />
+                    <img
+                    className="service_anim"
+                    src="/img/section1_animation1.svg"
+                    alt="animation"
+                  />
                 <img
                   className="service_anim2"
                   src="/img/section1_animation2.svg"
