@@ -2,10 +2,17 @@ import React from 'react';
 import '../../style/aboutUs.scss'
 import PopUp from './PopUp';
 import Slide from '../slide/Slide.js'
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const AboutUs = () => {
+    const navigate = useNavigate();
+
+    const handleKnowMoreClick = () => {
+      navigate('/about-us');
+      window.scrollTo(0, 0); // Прокрутка сторінки вгору
+    };
     return (
         <div className='about_us'>
             <div className="about_wrap">
@@ -26,7 +33,9 @@ const AboutUs = () => {
             </div>
             <PopUp/>
             <div className="know_more">
-                <button className='btn_know_more'>Дізнатись більше</button>
+            <button className="btn_know_more" onClick={handleKnowMoreClick}>
+      <p>Дізнатись більше</p>
+    </button>
                 <img src='/icons/icon_arrow-forward.svg'alt="" />
             </div>
             
