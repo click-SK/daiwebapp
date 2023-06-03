@@ -1,12 +1,12 @@
 @import'./main.scss';
 
 .header{
-    padding: 50px 0 124px;
+    padding: 50px 0 114px 0;
 }
 
 
 .header_row{
-    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 36px;
+    column-gap: 25px;
 
   
 }
@@ -32,3 +32,26 @@
 }
 
 
+@media(max-width: 1200px){
+    .links{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+
+    .burger {
+        display: flex;
+        height: 75px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_logo{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        img{
+            width: 70%;
+        }
+    }
+}

@@ -3,6 +3,10 @@
 @import'./colors.scss';
 
 
+.faq{
+    width: 100%;
+}
+
 .faq_btn{
     margin-top: 167px;
     @extend %btn_slider;
@@ -17,6 +21,7 @@
 }
 
 .faq_answer_text{
+    width: 450px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
@@ -66,5 +71,46 @@
     font-size: 20px;
     line-height: 1.5;
     color: $button_color;
+
+}
+
+
+@media  (max-width:600px){
+
+    .faq_answer_text{
+        font-size: 18px;
+        width: 60%;
+        line-height: 29px;
+    }
+    
+    .faq_question_text{
+        font-size: 14px;
+    }
+
+    .faq_question{
+        padding: 0 20px;
+    }
+
+    .contacts_main_text{
+        margin-left: 1px;
+    }
+
+}
+@media  (max-width:400px){
+
+    .faq_answer_text{
+        width: 70%;
+
+    }
+    
+
+    .faq_answer_logo{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 70%;
+        }
+    }
 
 }

@@ -2,8 +2,6 @@ import './../style/footer.scss'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './header/Logo';
-// import globIcon from './img/icons/icons_language.svg'
-// import emailFooter from '../../public/icons/icon_email-footer.svg'
 
 
 const Footer = () => {
@@ -12,7 +10,7 @@ const Footer = () => {
             <div className="footer_container">
                 <div className="footer_nav">
                     <Logo/>
-                    <div className='links'>
+                    <div className='links footer_nav_display'>
                         <Link to='/'>Головна</Link>
                         <Link to='/about-us'>Про нас</Link>
                         <Link to='/service'>Послуга</Link>
