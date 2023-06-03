@@ -11,17 +11,17 @@ const AboutUsPage = () => {
                  {/* <div className='background'>
                     <AnimWave/>
                 </div> */}
-                {/* <div className="about_background">
+                <div className="about_background">
                     <div className="about_spotlight_one"></div>
                     <div className="about_spotlight_two"></div>
                     <div className="about_spotlight_three"></div>
                     <div className="about_small_animation">
                         <img src='/img/small_anim.svg' alt="anim" />
                     </div>
-                    <div className="about_img_down">
+                    {/* <div className="about_img_down">
                         <img src='/img/About_img.png' alt="img" />
-                    </div>
-                </div> */}
+                    </div> */}
+                </div>
                 <div className="main_info">
                     <div className="title">Хто сказав, що <span>інвестування</span>  це складно?</div>
                     <div className="description"><span>D.A.I.Wo </span> – це платформа, де користувачу не потрібні глибокі знання у фінансуванні, макроекономіці та інвестиціях. <p className='display_none'>Ви купуєте токени, а штучний інтелект самостійно інвестує та розподіляє кошти.</p></div>

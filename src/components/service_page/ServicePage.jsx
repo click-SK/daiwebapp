@@ -63,13 +63,13 @@ const ServicePage = () => {
       <div className="service_page">
         {/* <div className="background">
           <AnimWave />
-        </div>
+        </div> */}
         <div className="main_background">
           <div className="service_spotlight_one"></div>
           <div className="service_spotlight_two"></div>
           <div className="service_spotlight_three"></div>
           <div className="service_spotlight_four"></div>
-        </div> */}
+        </div>
         <div className="container">
           <div className="service_title_block">
             <div className="service_title">

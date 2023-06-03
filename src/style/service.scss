@@ -1,7 +1,10 @@
 @import'./main.scss';
 
 
-
+.main_background{
+    position: relative;
+    width: 100%;
+}
 
 .know_more{
     margin-top: 68px;
@@ -20,6 +23,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+    background: transparent;
     line-height: 1.5;
     color: $button_color;
 
@@ -135,6 +139,7 @@
     padding: 15px 10px 15px 15px;
     font-style: normal;
     font-weight: 400;
+    background: transparent;
     font-size: 20px;
     line-height: 1.5;
     color: $button_color;
@@ -226,6 +231,16 @@
 
     .service_info_subtitle {
         margin-top: 31%;
+    }
+}
+
+@media  (max-width:495px){
+    .service_info_title{
+        font-size: 24px;
+    }
+
+    .service_info_subtitle{
+        font-size: 18px;
     }
 }
 

@@ -25,6 +25,9 @@ const Service = () => {
                     <div className="service_info_pictures">
                         <img className='coin_one' src='/img/coin1.svg' alt="Coin img" />
                         <img className='coin_two' src='/img/coin2.svg' alt="Coin img" />
+                        <div className="main_small_animation">
+                            <img src="./img/main_small_bg-anim.svg" alt="animation" />
+                        </div>
                     </div>
                 </div>
             </div>

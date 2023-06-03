@@ -19,6 +19,12 @@ function App() {
         <div className='background'>
             <AnimWave/>
         </div>
+        {/* <div className="main_page_background">
+            <div className="main_spotlight_one"></div>
+            <div className="main_spotlight_two"></div>
+            <div className="main_spotlight_three"></div>
+
+        </div> */}
       <Header/>
       <Routes>
       <Route path='/' element={<MainPage/>}/>

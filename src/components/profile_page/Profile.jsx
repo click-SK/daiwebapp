@@ -10,11 +10,11 @@ const Profile = () => {
     
     return ( 
         <div className="profile">
-            {/* <div className="main_background">
+            <div className="main_background">
                 <div className="profile_spotlight_one"></div>
                 <div className="profile_spotlight_two"></div>
                 <div className="profile_spotlight_three"></div>
-            </div> */}
+            </div>
             <div className="container">
                 <div className="profile_indicators">
                     <div className="air__prof">
