@@ -138,11 +138,11 @@ const MainPage = () => {
             </div>
           </div>
           <div className="main_card">
-                        <div className="cart_item card_rate">
-                        <div className="duplicat_rate">
-                            <div className="card_title">Rate:</div>
-                            <div className="card_item_one">
-                            {/* <ul className='rate_list'>
+            <div className="cart_item card_rate">
+              <div className="duplicat_rate">
+                <div className="card_title">Rate:</div>
+                <div className="card_item_one">
+                  {/* <ul className='rate_list'>
                                 {arrNumb.map((item, idx) => (
                                     <li className='rate_list_item' key={idx}>
                                     {item}
@@ -150,27 +150,27 @@ const MainPage = () => {
                                     </li>
                                 ))}
                                 </ul> */}
-                                                {lastRate && (
-                  <CounterYear
-                    firstValue={Number(lastRate)}
-                    val={Number(lastRate * (lastAir / 100) + lastRate)}
-                    time={time}
-                    isBool={false}
-                  />
-                )}
-                            </div>
-                        </div>
-                        </div>
-                        
-                        <div className="cart_item card_air">
-                        <div className="air_duplicat">
-                            <div className="card_title">Air:</div>
-                            <div className="card_item_two">
-                            <AirCounter angle={angle} lastAir={lastAir} />
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                  {lastRate && (
+                    <CounterYear
+                      firstValue={Number(lastRate)}
+                      val={Number(lastRate * (lastAir / 100) + lastRate)}
+                      time={time}
+                      isBool={false}
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <div className="cart_item card_air">
+              <div className="air_duplicat">
+                <div className="card_title">Air:</div>
+                <div className="card_item_two">
+                  <AirCounter angle={angle} lastAir={lastAir} />
+                </div>
+              </div>
+            </div>
+          </div>
           {/* <div className="calc__wrap-item rate">
             <div className="price_and_button__wrap">
               <h2>Price</h2>
