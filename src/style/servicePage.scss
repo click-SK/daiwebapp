@@ -130,12 +130,37 @@
     width: 50%;
     height: 600px;
     position: relative;
-
+    
 }
+
+
 
 .service_anim{
-
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
+
+
+
+.service_anim2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -999;
+    left: 0;
+    animation: spin 10s linear infinite; /* Додайте анімацію "spin" */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Початковий кут обертання */
+    }
+    100% {
+        transform: rotate(360deg); /* Кут обертання після завершення анімації */
+    }
+}
+
 .how_work_info{
     display: flex;
     flex-direction: column;

@@ -1,10 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useWindowScroll } from 'react-use';
 import '../../style/service.scss'
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 const Service = () => {
+
+    const navigate = useNavigate();
+
+  const handleKnowMoreClick = () => {
+    navigate('/service');
+    window.scrollTo(0, 0); // Прокрутка сторінки вгору
+  };
 
   const coinOneRef = useRef(null);
   const coinTwoRef = useRef(null);
@@ -64,7 +72,9 @@ const Service = () => {
                 <div className="info_block"> <p>Прозорість та безпека забезпечена <span>смарт-конктрактами</span> </p>  </div>
             </div>
             <div className="know_more">
-                <button className='btn_know_more'>Дізнатись більше</button>
+            <button className="btn_know_more" onClick={handleKnowMoreClick}>
+      <p>Дізнатись більше</p>
+    </button>
                 <img src='/icons/icon_arrow-forward.svg' alt="" />
             </div>
         </div>
