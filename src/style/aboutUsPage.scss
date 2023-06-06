@@ -168,6 +168,7 @@
     // background: url(./../img/logo_second.svg) no-repeat;
     // background-position: 50% 50%;
     // background-size: 223px 267px;
+    position: relative;
     font-weight: 500;
     width: 100%;
     font-size: 24px;
@@ -179,35 +180,104 @@
 }
 
 .about_section_small{
+    position: relative;
     display: flex;
     justify-content: space-around;
     margin-bottom: 173px;
 }
 
+.logo_aboutus{
+    position: absolute;
+    width: 26%;
+    top: 0;
+    left: 36%;
+    height: 50%;
+    margin-top: 57px;
+    z-index: -99;
+}
+
 .first_section_small, .second_section_small{
+    position: absolute;
     width: 50%;
     margin: 0 10px;
     max-width: 320px;
     min-height: 100px;
     background: linear-gradient(200.75deg, #07EDD2 2.03%, #9C63F7 93.26%);
     border-radius: 15px;
+    
+}
+
+
+@keyframes rotate {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        left: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        left: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        left: 0; /* Початковий кут обертання */
+        top: 0;
+    }
 }
 
 .first_section_small{
+    left: 0;
+    top: 0;
     padding: 15px 41.5px;
+    animation: rotate 3s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
+}
+@keyframes rotate2 {
+    0% {
+        right: 0;
+        top: 0;
+    }
+    25% {
+        right: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        right: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        right: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        right: 0; /* Початковий кут обертання */
+        top: 0;
+    }
 }
 
 .second_section_small{
+    right: 0;
+    top: 0;
     padding: 14.5px 16px;
+    animation: rotate2 2s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
 }
 
 .about_section_big{
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 173px;
 }
 
 .first_section_big, .second_section_big{
+    position: absolute;
     width: 50%;
     margin: 0 10px;
     max-width: 400px;
@@ -217,12 +287,67 @@
 }
 
 .first_section_big{
+    left: 0;
+    top: 0;
     padding: 14.5px 24.5px;
+    animation: rotate3 3.5s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
+}
+
+@keyframes rotate3 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        left: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        left: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        left: 0; /* Початковий кут обертання */
+        top: 0;
+    }
 }
 
 .second_section_big{
+    right: 0;
+    top: 0;
     padding: 16px 26.5px;
+    animation: rotate4 4.5s linear infinite; /* Додайте анімацію "spin" */
+    animation-timing-function: ease-in-out; /* Додайте плавність до анімації */
 }
+
+@keyframes rotate4 {
+    0% {
+        right: 0;
+        top: 0;
+    }
+    25% {
+        right: 5px; /* Початковий кут обертання */
+        top:5px
+    }
+    50% {
+        right: 7px; /* Початковий кут обертання */
+        top:3px
+    }
+    75% {
+        right: 3px; /* Початковий кут обертання */
+        top:-5px
+    }
+    100% {
+        right: 0; /* Початковий кут обертання */
+        top: 0;
+    }
+}
+
 
 .why_daiwo{
     margin-bottom: 100px;
@@ -374,7 +499,7 @@
     }
 
     .extra_info_text_ttitle{
-        font-size: 26px;
+        font-size: 32px;
     }
 
     .extra_info_text_subtitle{

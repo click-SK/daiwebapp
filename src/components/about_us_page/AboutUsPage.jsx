@@ -15,9 +15,9 @@ const AboutUsPage = () => {
                     <div className="about_spotlight_one"></div>
                     <div className="about_spotlight_two"></div>
                     <div className="about_spotlight_three"></div>
-                    <div className="about_small_animation">
+                    {/* <div className="about_small_animation">
                         <img src='/img/small_anim.svg' alt="anim" />
-                    </div>
+                    </div> */}
                     {/* <div className="about_img_down">
                         <img src='/img/About_img.png' alt="img" />
                     </div> */}
@@ -51,6 +51,7 @@ const AboutUsPage = () => {
                         <div className="second_section_small">Прозорість забезпечена <span>
                         смарт-конктрактами</span>
                         </div>
+                        
                    </div>
                    <div className="about_section_big">
                         <div className="first_section_big"><span>Штучний інтелект</span> самостійно інвестує та розподіляє кошти.
@@ -58,6 +59,10 @@ const AboutUsPage = () => {
                         <div className="second_section_big">Дає змогу учасникам ринку <span>легко заробляти гроші.</span>
                         </div>
                    </div>
+                   <div className='logo_aboutus'>
+                            <img className='logo_img' src='/img/logo_vertical.svg' alt="logo" />
+                            <img className='logo_img2' src='/img/background_animation2.svg' alt="logo" />
+                        </div>
                 </div>
                 <div className='slider_wraper_about_page'>
                     <Slide/>

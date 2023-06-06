@@ -52,6 +52,43 @@
     height: 25px;
 }
 
+.item-value{
+    transition: all 0.5 ease-in-out;
+    .item-value_shadow{
+        transition: all 0.5 ease-in-out;
+    }
+}
+
+.item-value-content{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    background: #3f4958;
+    color: white;
+    border-radius: 15px;
+    margin-top: -22px;
+    padding-top: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    align-items: center;
+    
+    p{
+        width: 80%;
+    }
+}
+
+.item-value_shadow{
+    position: relative;
+    box-shadow: 0px 8px 16px rgb(39 45 54 / 73%);
+    z-index: 1000;
+}
+
+.img-open{
+    transform: rotate(90deg)
+}
+
+
 .know_more{
     margin-top: 40px;
     display: flex;
@@ -87,7 +124,7 @@
     }
     
     .faq_question_text{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .faq_question{
@@ -98,6 +135,22 @@
         margin-left: 1px;
     }
 
+    .item-value-content{
+        padding: 50px 20px 20px 20px ;
+        p{
+            font-size: 14px;
+            width: 100%;
+        }
+    }
+
+    .faq_btn {
+        margin-top: 80px;
+    }
+
+    .know_more {
+        margin-top: 20px;
+    }
+
 }
 @media  (max-width:400px){
 
@@ -105,6 +158,12 @@
         width: 70%;
 
     }
+
+    .item-value-content{ 
+        p {
+        font-size: 12px;
+        line-height: 1.1;
+    }}
     
 
     .faq_answer_logo{

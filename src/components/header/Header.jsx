@@ -11,7 +11,12 @@ import { useEffect } from 'react';
 const Header = () => {
 
     const [menyBlock, setMenuBlock] = useState('')
+    const [lang, setLang] = useState("УКР")
+    const [isOpen, setIsOpen] = useState(false)
 
+    const hendlerChangeLang = (value) => {
+        setLang(value);
+      };
 
     return (
         <header className='header'>
@@ -56,9 +61,18 @@ const Header = () => {
                                  to='/profile'>Профіль</Link>
                         </div>
                         <div className="burger_menu_lang">
-                            <div className="glob_lang">
+                        <div 
+                            onClick={()=>setIsOpen(!isOpen)}
+                            className="glob_lang">
                                 <img src='/icons/icons_language.svg' alt="glob" />
-                                <p>УКР</p>
+                                <p className='lang_select'>{lang} <img class="" src="/icons/icon_arrow-purple.svg" alt="icon"></img></p>
+                                {isOpen &&
+                                    <div className='lang_option'>
+                                        <p onClick={(e)=>hendlerChangeLang('ENG')}>ENG</p> 
+                                        <p onClick={(e)=>hendlerChangeLang('УКР')}>УКР</p> 
+                                        <p onClick={(e)=>hendlerChangeLang('РУС')}>РУС</p> 
+                                    </div>
+                                }
                             </div>
                         </div>
                         <div className="burger_menu_mail">

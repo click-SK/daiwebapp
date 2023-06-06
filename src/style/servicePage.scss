@@ -236,14 +236,22 @@
     width: 40%;
     position: relative;
     
-
+    &:hover{
+        .column_item_card{
+            top: 0;
+            left: 0;
+        }
+        .column_item_border{
+            border: 1px solid #fff;
+        }
+    }
+    
 }
 
 .column_item_border{
     max-width: 446px;
     min-height: 213px;
-
-    border: 1px solid #fff;
+    border: 0px solid #fff;
     border-radius: 15px;
 }
 
@@ -251,14 +259,15 @@
     position: absolute;
     max-width: 446px;
     min-height: 213px;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 12px;
     display: flex;
     flex-direction: column;
     padding: 29px 28px 0 30px;
     background-color: $color_gray;
     border-radius: 15px;
     transform: translate(-12px ,-10px);
+    transition:  0.3s;
 }
 
 .card_header{

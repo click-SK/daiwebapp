@@ -6,7 +6,7 @@
   z-index: 100;
   font-size: 3vw;
   left: 33px;
-  top: 36px;
+  top: 16px;
   z-index: 150;
   font-size: 30px;
   font-family: 'Kanit';
@@ -21,7 +21,7 @@
 
   @media (max-width: 1153px){
     left: 31px;
-    top: 31px;
+    // top: 31px;
     font-size: 25px;
   }
 
@@ -125,8 +125,8 @@
       width: 10%;
       z-index: 90;
       height: 100%;
-      left: 42%;
-      top: -32px;
+      left: 50%;
+      top: -50px;
     transform: rotate(0deg);
     transform-origin: center bottom;
     clip-path: polygon(44% 0%, 0 45%, 100% 45%);

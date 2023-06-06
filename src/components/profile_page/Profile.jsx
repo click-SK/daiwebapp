@@ -112,8 +112,8 @@ const Profile = () => {
                         <div className="card_title_prof">Air:</div>
                         <AirCounter angle={angle} lastAir={lastAir} />
                     </div> */}
-            <div className="cart_item card_air">
-              <div className="air_duplicat">
+            <div className="cart_item card_air air__prof">
+              <div className="">
                 <div className="card_title">Air:</div>
                 <div className="card_item_two">
                   <AirCounter angle={angle} lastAir={lastAir} />
@@ -135,9 +135,9 @@ const Profile = () => {
                 </div>
               </div>
             </div> */}
-            <div className="cart_item card_rate">
-              <div className="duplicat_rate">
-                <div className="card_title">Rate:</div>
+            <div className="cart_item card_rate rate_prof">
+              {/* <div className=""> */}
+                <div className="card_title title_rate_profile">Rate:</div>
                 <div className="card_item_one">
                   {/* <ul className='rate_list'>
                                 {arrNumb.map((item, idx) => (
@@ -156,7 +156,7 @@ const Profile = () => {
                     />
                   )}
                 </div>
-              </div>
+              {/* </div> */}
             </div>
             {/* <div className="rate_prof">
               <div className="card_title_prof">Emission:</div>
@@ -177,7 +177,7 @@ const Profile = () => {
               <div className="card_title_prof">Emission:</div>
               <div className="number_item">
                 <div className="card_item_one">
-                  <ul className="rate_list">
+                  <ul className="rate_list rate_list_profile ">
                   {lastEmission && <Counter val={lastEmission} />}
                   </ul>
                 </div>
@@ -225,7 +225,12 @@ const Profile = () => {
                 <div className="desk_title">Аналіз:</div>
                 <div className="analysis_board">
                   <div className="analysis_chart">
-                    <img src="/img/chart_profile.svg" alt="chart" />
+                    {/* <img src="/img/chart_profile.svg" alt="chart" /> */}
+                    <div class="box">
+                      <div class="box-inner">
+                        {/* <span>68%</span> */}
+                      </div>
+                    </div>
                   </div>
                   <div className="chart_info">
                     <div className="chart_info_data">

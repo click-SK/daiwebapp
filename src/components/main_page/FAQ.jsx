@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import '../../style/faq.scss'
 import { Link, useNavigate } from 'react-router-dom';
+import ItemValue from './ItemValue';
 
 
 
@@ -9,16 +10,25 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const FAQ = () => {
 
-    const [arr,setArr] = useState([
-        'З якої суми, я можу почати інвестувати?',
-        'Що таке смарт-контракти?',
-        'Яка мінімальна сума інвестицій?',
-        'Як відбувається монетизація?',
-        'Для кого створений D.A.I.Wo?',
-        'А чому саме D.A.I.Wo, а не банки чи інвестиційні фонди?',
+    const [isOpen, setIsOpen] = useState(false)
 
+    const [arr,setArr] = useState([
+        {   name :'З якої суми, я можу почати інвестувати?' ,
+            value : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae? Maiores odio, obcaecati animi dolor beatae recusandae exercitationem architecto temporibus veritatis vel a, libero impedit nisi. Illum voluptates voluptate quas.'},
+        {   name :'Що таке смарт-контракти?' ,
+            value : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae? Maiores odio, obcaecati animi dolor beatae recusandae exercitationem architecto temporibus veritatis vel a, libero impedit nisi. Illum voluptates voluptate quas.'},
+        {   name :'Яка мінімальна сума інвестицій?' ,
+            value : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae? Maiores odio, obcaecati animi dolor beatae recusandae exercitationem architecto temporibus veritatis vel a, libero impedit nisi. Illum voluptates voluptate quas.'},
+        {   name :'Як відбувається монетизація?' ,
+            value : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae? Maiores odio, obcaecati animi dolor beatae recusandae exercitationem architecto temporibus veritatis vel a, libero impedit nisi. Illum voluptates voluptate quas.'},
+        {   name :'Для кого створений D.A.I.Wo?' ,
+            value : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae? Maiores odio, obcaecati animi dolor beatae recusandae exercitationem architecto temporibus veritatis vel a, libero impedit nisi. Illum voluptates voluptate quas.'},
+        {   name :'А чому саме D.A.I.Wo, а не банки чи інвестиційні фонди?' ,
+            value : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae? Maiores odio, obcaecati animi dolor beatae recusandae exercitationem architecto temporibus veritatis vel a, libero impedit nisi. Illum voluptates voluptate quas.'},
     ]);
 
+
+      
     const navigate = useNavigate();
 
     const handleKnowMoreClick = () => {
@@ -38,12 +48,13 @@ const FAQ = () => {
                 </div>
 
                 {arr.map((item,index)=> (
-                     <div className="faq_question" key={index} >
-                        <div className="faq_question_text">{item}</div>
-                        <div className="faq_question_arrow">
-                             <img src='/icons/icon_arrow-purple.svg' alt="icon" />
-                        </div>
-                    </div>
+
+                        <ItemValue
+                        key={index}
+                        item = {item}
+                        />
+   
+                    
                 ))}
 
                

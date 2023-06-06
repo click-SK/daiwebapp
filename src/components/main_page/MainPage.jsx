@@ -162,7 +162,7 @@ const MainPage = () => {
               </div>
             </div>
 
-            <div className="cart_item card_air">
+            <div className="cart_item card_air air_main_page">
               <div className="air_duplicat">
                 <div className="card_title">Air:</div>
                 <div className="card_item_two">

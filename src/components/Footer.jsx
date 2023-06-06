@@ -1,10 +1,17 @@
 import './../style/footer.scss'
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './header/Logo';
 
 
 const Footer = () => {
+
+    const [lang, setLang] = useState("УКР")
+    const [isOpen, setIsOpen] = useState(false)
+
+    const hendlerChangeLang = (value) => {
+        setLang(value);
+      };
     return ( 
         <footer className='footer'>
             <div className="footer_container">
@@ -21,10 +28,22 @@ const Footer = () => {
                         <img src='./icons/icon_email-footer.svg' alt="email" />
                         <p>info@daiwo.ai</p>  
                     </div>
-                    <div className="glob_lang">
-                    <img src='./icons/icons_language.svg' alt="glob" />
-                    <p>УКР</p>
+                    <div 
+                onClick={()=>setIsOpen(!isOpen)}
+                className="glob_lang footer_lang">
+                    <div style={{display:'flex'}}>
+                    <img src='/icons/icons_language.svg' alt="glob" />
+                    <p className='lang_select'>{lang} <img class="" src="/icons/icon_arrow-purple.svg" alt="icon"></img></p>
                     </div>
+                    {isOpen &&
+                        <div 
+                        className='lang_option'>
+                            <p onClick={(e)=>hendlerChangeLang('ENG')}>ENG</p> 
+                            <p onClick={(e)=>hendlerChangeLang('УКР')}>УКР</p> 
+                            <p onClick={(e)=>hendlerChangeLang('РУС')}>РУС</p> 
+                        </div>
+                    }
+                </div>
                 </div>
             </div>
             <div className="footer_border"></div>

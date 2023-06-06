@@ -12,7 +12,7 @@ const Counter = ({ val }) => {
   }, [currVal]);
 
   return (
-    <div className='number_block'>
+    <div className='number_block_profile'>
         <div style={{color:'#7DD1C1'}}>
           <p>{currVal.toFixed(0)}</p>
         </div>
