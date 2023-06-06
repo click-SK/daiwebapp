@@ -77,7 +77,7 @@
 
 .coin_one{
     position: absolute;
-    width: 446px;
+    width: 288px;
     // height: 287px;
     top: 80px;
     left: 100rem;
@@ -97,7 +97,7 @@
 
 .coin_anim{
     animation: coin_anim 1.5s linear ; /* Додайте анімацію "spin" */
-    left: -4rem;
+    left: 4rem;
 }
 .coin_anim2{
     animation: coin_anim2 2s linear ; /* Додайте анімацію "spin" */
@@ -110,7 +110,7 @@
         transform: rotate(360deg); /* Початковий кут обертання */
     }
     100% {
-        left: -4rem;
+        left: 4rem;
         transform: rotate(0deg); /* Кут обертання після завершення анімації */
     }
 }
@@ -222,9 +222,9 @@
     width: 100%;
 }
 
-.coin_one {
-    width:80%;
-}
+// .coin_one {
+//     width:80%;
+// }
 
 .coin_two {
     width: 80%;
@@ -247,7 +247,7 @@
     }
 
    .service_info_subtitle{
-    margin-top: 35%;
+    margin-top: 44%;
    }
 
 .service_info_pictures {
@@ -259,7 +259,7 @@
 
 .coin_one {
     position: absolute;
-    width: 30%;
+    width: 27%;
     left: 1%;
 }
 
@@ -267,7 +267,7 @@
     position: absolute;
     top: -40px;
     left: 15%;
-    width: 30%;
+    width: 27%;
     z-index: -1;
 }
 
@@ -292,6 +292,13 @@
         margin-top: 70px;
     }
 
+    .coin_one {
+        top: 112px;
+    }
+    
+    .coin_two {
+        top: -35px;
+    }
 
 
     .service_info_subtitle{
@@ -313,12 +320,21 @@
         margin-top: 34%;
     }
 
+    // .coin_two {
+    //     position: absolute;
+    //     top: -24px;
+    //     left: 15%;
+    //     width: 30%;
+    //     z-index: -1;
+    // }
+
+    .coin_one {
+        top: 134px;
+        left: -2%;
+    }
+    
     .coin_two {
-        position: absolute;
-        top: -24px;
-        left: 15%;
-        width: 30%;
-        z-index: -1;
+        top: -16px;
     }
 
 }

@@ -399,7 +399,7 @@
 @media  (max-width:1020px) {
     .main_small_animation{
         left: -4%;
-        top: -153px;
+        top: -79px;
         img{
             width: 54%;
         }
@@ -585,7 +585,7 @@
 @media  (max-width:486px) {
     .main_small_animation{
         left: -8%;
-        top: 20px;
+        top: 37px;
         img{
             width: 60%;
         }
@@ -656,18 +656,23 @@
         }
     
     }
-    
-}
-@media  (max-width:354px){
-
-
     .main_small_animation{
         left: -18%;
-        top: 60px;
+        top: 82px;
         img{
             width: 75%;
         }
     }
+    
+}
+
+
+
+
+@media  (max-width:354px){
+
+
+
 
     .air_main_page{
         .air__speed{
