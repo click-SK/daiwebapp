@@ -33,7 +33,7 @@ const CounterYear = ({ firstValue, val, time, isBool }) => {
     setParsArr(beforeDot.split('').concat('.', afterDot.split('')));
   }, [currVal]);
 
-  console.log('parseArr',parseArr);
+
 
   // Change
 
