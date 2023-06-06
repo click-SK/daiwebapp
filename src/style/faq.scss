@@ -52,6 +52,43 @@
     height: 25px;
 }
 
+.item-value{
+    transition: all 0.5 ease-in-out;
+    .item-value_shadow{
+        transition: all 0.5 ease-in-out;
+    }
+}
+
+.item-value-content{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    background: #3f4958;
+    color: white;
+    border-radius: 15px;
+    margin-top: -22px;
+    padding-top: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    align-items: center;
+    
+    p{
+        width: 80%;
+    }
+}
+
+.item-value_shadow{
+    position: relative;
+    box-shadow: 0px 8px 16px rgb(39 45 54 / 73%);
+    z-index: 1000;
+}
+
+.img-open{
+    transform: rotate(90deg)
+}
+
+
 .know_more{
     margin-top: 40px;
     display: flex;

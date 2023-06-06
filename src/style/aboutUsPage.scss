@@ -168,6 +168,7 @@
     // background: url(./../img/logo_second.svg) no-repeat;
     // background-position: 50% 50%;
     // background-size: 223px 267px;
+    position: relative;
     font-weight: 500;
     width: 100%;
     font-size: 24px;
@@ -183,6 +184,16 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 173px;
+}
+
+.logo_aboutus{
+    position: absolute;
+    width: 26%;
+    top: 0;
+    left: 36%;
+    height: 50%;
+    margin-top: 57px;
+    z-index: -99;
 }
 
 .first_section_small, .second_section_small{
