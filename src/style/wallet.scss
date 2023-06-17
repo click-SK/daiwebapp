@@ -1,0 +1,94 @@
+.wallet-page {
+    // position: fixed;
+    width: 100%;
+    &-container {
+        // position: absolute;
+        background: #3f4958;
+        width: 590px;
+        height: auto;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        margin: 0 auto 250px;
+        padding: 40px 80px 50px 80px;
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        .card-title {
+            font-size: 36px;
+            line-height: 46.8px;
+            color: #9c63f7;
+        }
+
+        .card-subtitle {
+            color: #ffffff;
+
+            font-size: 20px;
+            line-height: 29.9px;
+        }
+
+        .wallets-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+
+            width: 100%;
+            &-item {
+                cursor: pointer;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                gap: 30px;
+
+                padding: 20px 30px;
+                background: #2b3649;
+                border-radius: 10px;
+                border: 2px solid #2b3649;
+
+                width: 100%;
+                &-img {
+                }
+
+                &-title {
+                    color: #ffffff;
+                    font-size: 20px;
+                    line-height: 29.9px;
+                }
+            }
+
+            &-item:hover,
+            .active {
+                border: 2px solid;
+
+                border-image: linear-gradient(180deg, #07edd2, #9c63f7) 1;
+            }
+        }
+
+        .card-helper {
+            color: #ffffff;
+
+            font-size: 16px;
+            line-height: 23.92px;
+
+            .card-helper-purple {
+                color: #9c63f7;
+            }
+        }
+
+        .exchange_btn {
+            width: 100%;
+        }
+    }
+}
