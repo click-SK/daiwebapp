@@ -54,7 +54,7 @@ function App() {
 				<Route path='/contacts' element={<ContactsPage />} />
 				<Route path='/profile' element={<Profile account={account} />} />
 				<Route path='/wallet' element={<WalletPage setAccount={setAccount} />} />
-				<Route path="*" element={<Navigate to="/" />} />
+				// <Route path="*" element={<Navigate to="/" />} />
 			</Routes>
 			<Footer />
 		</div>
