@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
-import '../../style/profile.scss'
-import TransactionHistory from './TransactionHistory';
-import AirCounter from '../AirCounter';
-import CounterYear from '../CounterYear';
-import Counter from '../Counter';
-import { getContractData } from "../../service";
+import "../../style/profile.scss";
+import TransactionHistory from "./TransactionHistory";
+import AirCounter from "../AirCounter";
+import CounterYear from "../CounterYear";
+import Counter from "../Counter";
+import {
+	getContractData,
+	estimateGas,
+	getUserUSDTBalance,
+	swapTokens,
+} from "../../service";
 
 const Profile = ({ account }) => {
 	const [allData, setAllData] = useState([]);
@@ -15,31 +20,41 @@ const Profile = ({ account }) => {
 	const [totalbalanceFinal, setTotalbalanceFinal] = useState(0);
 	const [angle, setAngle] = useState(0);
 	const [lastEmission, setLastEmission] = useState(0);
+	const [fee, setFee] = useState(0);
+	const [usdtValue, setUsdtValue] = useState(0);
+	const [daiwooValue, setDaiwooValue] = useState(0);
 
 	const getContData = async (account) => {
-		const result = await getContractData(account)
-		setLastEmission(Number(result.totalSupply) / 10 ** 21)
-		console.log(result)
+		const result = await getContractData(account);
+		const estimatedFee = await estimateGas();
+		const usdt = await getUserUSDTBalance(account);
+		setLastEmission(Number(result.totalSupply) / 10 ** 21);
+		setFee(estimatedFee.toFixed(2));
+		setUsdtValue(Number(usdt).toFixed(2));
+		setDaiwooValue((Number(result.balanceOf) / 10 ** 18).toFixed(2));
+		console.log(result);
+		console.log(estimatedFee.toFixed(2));
+		console.log(Number(usdt).toFixed(2));
+		console.log(usdt);
 		// To get amount of token in user wallet you can use result.balanceOf, example: setUserBalance(result.balanceOf)
 		// To get lastBuyBackPrice of token from user wallet you can use result.lastBuyBackPrice, example: setUserLastBuyBackPrice(result.lastBuyBackPrice)
-	}
+	};
 
-	useEffect(() => {
-		fetch("https://calc-server.herokuapp.com/getall")
-			.then((res) => res.json())
-			.then((res) => setAllData(res));
-	}, []);
+	// useEffect(() => {
+	// 	fetch("https://calc-server.herokuapp.com/getall")
+	// 		.then((res) => res.json())
+	// 		.then((res) => setAllData(res));
+	// }, []);
 
 	useEffect(() => {
 		if (account) {
-			getContData(account)
-			console.log(account)
+			getContData(account);
+			console.log(account);
+		} else if (localStorage.getItem("ethAccount")) {
+			getContData(localStorage.getItem("ethAccount"));
+			console.log(localStorage.getItem("ethAccount"));
 		}
-		else if (localStorage.getItem("ethAccount")) {
-			getContData(localStorage.getItem("ethAccount"))
-			console.log(localStorage.getItem("ethAccount"))
-		}
-	}, [])
+	}, []);
 
 	useEffect(() => {
 		if (allData.length !== 0) {
@@ -119,7 +134,6 @@ const Profile = ({ account }) => {
 	const arrNumb = new Array(27).fill(1);
 	const arrNum2 = new Array(15).fill(1);
 
-
 	return (
 		<div className="profile">
 			<div className="main_background">
@@ -158,7 +172,9 @@ const Profile = ({ account }) => {
             </div> */}
 					<div className="cart_item card_rate rate_prof">
 						{/* <div className=""> */}
-						<div className="card_title title_rate_profile">Rate:</div>
+						<div className="card_title title_rate_profile">
+							Rate:
+						</div>
 						<div className="card_item_one">
 							{/* <ul className='rate_list'>
                                 {arrNumb.map((item, idx) => (
@@ -171,7 +187,9 @@ const Profile = ({ account }) => {
 							{lastRate && (
 								<CounterYear
 									firstValue={Number(lastRate)}
-									val={Number(lastRate * (lastAir / 100) + lastRate)}
+									val={Number(
+										lastRate * (lastAir / 100) + lastRate
+									)}
 									time={time}
 									isBool={false}
 								/>
@@ -199,7 +217,9 @@ const Profile = ({ account }) => {
 						<div className="number_item">
 							<div className="card_item_one">
 								<ul className="rate_list rate_list_profile ">
-									{lastEmission && <Counter val={lastEmission} />}
+									{lastEmission && (
+										<Counter val={lastEmission} />
+									)}
 								</ul>
 							</div>
 						</div>
@@ -208,19 +228,27 @@ const Profile = ({ account }) => {
 				<div className="profile_main_desk">
 					<div className="desk_one">
 						<div className="total_number">
-							<div className="desk_title">Загальна кількість:</div>
+							<div className="desk_title">
+								Загальна кількість:
+							</div>
 							<div className="total_number_item">
 								<div className="number_item_prof">
 									<h4 className="coin_name">USDT</h4>
 									<div className="number_block">
 										<div className="card_item_one">
 											<ul className="rate_list">
-												{arrNum2.map((item, idx) => (
-													<li className="rate_list_item" key={idx}>
+												{usdtValue}
+												{/* {arrNum2.map((item, idx) => (
+													<li
+														className="rate_list_item"
+														key={idx}
+													>
 														{item}
-														{idx === 11 && <span>,</span>}
+														{idx === 11 && (
+															<span>,</span>
+														)}
 													</li>
-												))}
+												))} */}
 											</ul>
 										</div>
 									</div>
@@ -230,12 +258,18 @@ const Profile = ({ account }) => {
 									<div className="number_block">
 										<div className="card_item_one">
 											<ul className="rate_list">
-												{arrNum2.map((item, idx) => (
-													<li className="rate_list_item" key={idx}>
+												{daiwooValue}
+												{/* {arrNum2.map((item, idx) => (
+													<li
+														className="rate_list_item"
+														key={idx}
+													>
 														{item}
-														{idx === 11 && <span>,</span>}
+														{idx === 11 && (
+															<span>,</span>
+														)}
 													</li>
-												))}
+												))} */}
 											</ul>
 										</div>
 									</div>
@@ -281,7 +315,7 @@ const Profile = ({ account }) => {
 						<div className="exchange_line_one">
 							<div className="line_one_header">
 								<p className="avalible">Доступно</p>
-								<p className="sum">1234</p>
+								<p className="sum">{usdtValue}</p>
 							</div>
 							<div className="exchange_input_block">
 								<input
@@ -303,7 +337,10 @@ const Profile = ({ account }) => {
 							</div>
 						</div>
 						<div className="vector_down">
-							<img src="/icons/icon_vector_down.svg" alt="vector" />
+							<img
+								src="/icons/icon_vector_down.svg"
+								alt="vector"
+							/>
 						</div>
 						<div className="exchange_line_one">
 							<div className="exchange_input_block">
@@ -313,7 +350,10 @@ const Profile = ({ account }) => {
 									placeholder="Введіть к-сть"
 								/>
 								<div className="coin_selector">
-									<img src="/icons/icon_daiwo_coin.svg" alt="crypto" />
+									<img
+										src="/icons/icon_daiwo_coin.svg"
+										alt="crypto"
+									/>
 									<img
 										className="arr_click"
 										src="/icons/icon_arrow_white.svg"
@@ -323,7 +363,7 @@ const Profile = ({ account }) => {
 							</div>
 							<div className="line_two_header">
 								<p className="commission">Комісія</p>
-								<p className="sum_commission">14</p>
+								<p className="sum_commission">{fee}</p>
 							</div>
 						</div>
 						<div className="total_amount_sum">
@@ -336,14 +376,19 @@ const Profile = ({ account }) => {
 							/>
 						</div>
 						<div className="btn_wraper_exchange">
-							<button className="exchange_btn">Обміняти</button>
+							<button
+								className="exchange_btn"
+								onClick={swapTokens}
+							>
+								Обміняти
+							</button>
 						</div>
 					</div>
 				</div>
-				<TransactionHistory />
+				<TransactionHistory address={account} />
 			</div>
 		</div>
 	);
-}
+};
 
 export default Profile;

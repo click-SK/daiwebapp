@@ -21,11 +21,11 @@ const MainPage = () => {
 	const [angle, setAngle] = useState(0);
 	const [lastEmission, setLastEmission] = useState(0);
 
-	useEffect(() => {
-		fetch("https://calc-server.herokuapp.com/getall")
-			.then((res) => res.json())
-			.then((res) => setAllData(res))
-	}, []);
+	// useEffect(() => {
+	// 	fetch("https://calc-server.herokuapp.com/getall")
+	// 		.then((res) => res.json())
+	// 		.then((res) => setAllData(res));
+	// }, []);
 
 	useEffect(() => {
 		if (allData.length !== 0) {
@@ -121,16 +121,18 @@ const MainPage = () => {
 				<div className="main_wrap">
 					<div className="main_text">
 						<div className="main_title">
-							<span>Почни створювати</span> свою фінансову незалежність{" "}
-							<span>вже сьогодні</span>
+							<span>Почни створювати</span> свою фінансову
+							незалежність <span>вже сьогодні</span>
 						</div>
 						<div className="main_subtitle">
-							Так-так, не зі 100$, 10$ чи 1$ – а з 1 центу! Це найдешевший вхід
-							в інвестиції в світі.
+							Так-так, не зі 100$, 10$ чи 1$ – а з 1 центу! Це
+							найдешевший вхід в інвестиції в світі.
 						</div>
 						<div className="main_btn">
 							<button className="main_btn_one">Почати</button>
-							<button className="main_btn_two">Дізнатись більше</button>
+							<button className="main_btn_two">
+								Дізнатись більше
+							</button>
 						</div>
 						<div className="email">
 							<img src="/icons/icon_email.svg" alt="email" />
@@ -153,7 +155,10 @@ const MainPage = () => {
 									{lastRate && (
 										<CounterYear
 											firstValue={Number(lastRate)}
-											val={Number(lastRate * (lastAir / 100) + lastRate)}
+											val={Number(
+												lastRate * (lastAir / 100) +
+													lastRate
+											)}
 											time={time}
 											isBool={false}
 										/>
@@ -166,7 +171,10 @@ const MainPage = () => {
 							<div className="air_duplicat">
 								<div className="card_title">Air:</div>
 								<div className="card_item_two">
-									<AirCounter angle={angle} lastAir={lastAir} />
+									<AirCounter
+										angle={angle}
+										lastAir={lastAir}
+									/>
 								</div>
 							</div>
 						</div>
