@@ -25,6 +25,7 @@ function App() {
             <div className="main_spotlight_three"></div>
 
         </div> */}
+
       <Header/>
       <Routes>
       <Route path='/' element={<MainPage/>}/>
@@ -37,6 +38,7 @@ function App() {
       <Footer/>
     </div>
   );
+
 }
 
 export default App;
